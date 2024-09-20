@@ -1,0 +1,9 @@
+1. So sánh cách để xem mã nguồn của trang web 
+    elements, console
+
+2. Càng nhiều lỗi càng tốt
+
+6. Tìm hiểu: biết khái niệm, thông tin
+    Khảo sát: so sánh
+
+1, 2, 4, 5, 8

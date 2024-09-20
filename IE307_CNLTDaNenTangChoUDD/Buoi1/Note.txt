@@ -1,0 +1,4 @@
+Tìm hiểu cách cài đặt framework Xamarin/MAUI, Flutter
+
+app: expo go (cài đặt khi không cài được máy ảo android studio)
+
