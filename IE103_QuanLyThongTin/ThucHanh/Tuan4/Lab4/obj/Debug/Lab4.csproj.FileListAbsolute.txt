@@ -1,0 +1,5 @@
+C:\Users\TRAM\OneDrive - Trường ĐH CNTT - University of Information Technology\Courses\QuanLyThongTin\ThucHanh\Tuan4\Lab4\obj\Debug\Lab4.csproj.AssemblyReference.cache
+C:\Users\TRAM\OneDrive - Trường ĐH CNTT - University of Information Technology\Courses\QuanLyThongTin\ThucHanh\Tuan4\Lab4\obj\Debug\Lab4.Form1.resources
+C:\Users\TRAM\OneDrive - Trường ĐH CNTT - University of Information Technology\Courses\QuanLyThongTin\ThucHanh\Tuan4\Lab4\obj\Debug\Lab4.Properties.Resources.resources
+C:\Users\TRAM\OneDrive - Trường ĐH CNTT - University of Information Technology\Courses\QuanLyThongTin\ThucHanh\Tuan4\Lab4\obj\Debug\Lab4.csproj.GenerateResource.cache
+C:\Users\TRAM\OneDrive - Trường ĐH CNTT - University of Information Technology\Courses\QuanLyThongTin\ThucHanh\Tuan4\Lab4\obj\Debug\Lab4.csproj.CoreCompileInputs.cache

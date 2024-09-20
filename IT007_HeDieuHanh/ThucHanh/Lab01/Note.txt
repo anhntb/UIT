@@ -1,0 +1,31 @@
+bài 1:
+ls -l: xem quyền
+cd ..: quay lại địa chỉ ngay trước đó
+chmod u-r abc.txt: bỏ đi quyền read của owner
+cd /: chuyển về thư mục gốc
+cd /home/nguyentranbaoanh: chuyển về thư mục người dùng
+cd ~: như trên
+
+bài 2:
+mkdir
+chỉ cần chụp cây thư mục kết quả
+
+tree: hiện thư mục
+sudo update
+cần thêm 1 số lệnh để cài
+
+bài 3:
+sudo find / -type f -name "*.html"
+find /: tìm trong toàn bộ root
+cần thêm sudo để cấp quyền thực hiện
+
+
+bài 4:
+
+
+bài 5:
+rm -r MyWeb
+-r: để xóa luôn các thư mục bên trong
+
+
+CHUẨN BỊ TRƯỚC LAB 2: CÀI SSH CHO VSCODE

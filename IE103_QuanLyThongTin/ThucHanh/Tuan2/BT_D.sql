@@ -1,0 +1,128 @@
+﻿--------------------------------D. FUNCTION----------------------------------------
+
+USE QLDT
+GO
+
+
+--------------------------------------------------------
+--CAU 1
+--1. Viết hàm tính điểm trung bình của một đề tài. Giá trị trả về là điểm trung
+--bình ứng với mã số đề tài nhập vào
+
+CREATE FUNCTION CALC_AVGSCORE (@MSDT CHAR(6)) RETURNS FLOAT
+AS
+BEGIN
+	DECLARE @DTB FLOAT
+	IF NOT EXISTS (SELECT * FROM DETAI WHERE MSDT = @MSDT)
+		SET @DTB = 0
+	ELSE
+	BEGIN
+		SELECT @DTB = AVG(DIEMTONGHOP.DIEM)
+		FROM (SELECT * FROM GV_HDDT UNION
+			 SELECT * FROM GV_PBDT UNION
+			 SELECT * FROM GV_UVDT) AS DIEMTONGHOP
+		WHERE MSDT = @MSDT
+	END
+
+	RETURN @DTB
+END
+GO
+
+--1.1 THỰC THI
+SELECT DBO.CALC_AVGSCORE('97001') AS DTB
+GO
+
+--1.2 KIỂM TRA
+SELECT *
+FROM (SELECT * FROM GV_HDDT UNION 
+	 SELECT * FROM GV_PBDT UNION
+	 SELECT * FROM GV_UVDT) AS T
+WHERE MSDT = '97001'
+
+--1.3 KHÔI PHỤC DỮ LIỆU (NẾU CÓ)
+
+--1.4 XÓA
+DROP FUNCTION DBO.CALC_AVGSCORE
+GO
+
+
+
+---------------------------------------------------------------------------------
+--CAU 2
+--2. Trả về kết quả của đề tài theo MSDT nhập vào. Kết quả là DAT nếu như 
+--điểm trung bình từ 5 trở lên, và KHONGDAT nếu như điểm trung bình dưới 5.
+
+CREATE FUNCTION KQ_DETAI (@MSDT CHAR(6)) RETURNS VARCHAR(10)
+AS
+BEGIN
+	DECLARE @KQ VARCHAR(10), @DTB FLOAT = 0
+
+	SELECT @DTB = AVG(DIEMTONGHOP.DIEM)
+	FROM (SELECT * FROM GV_HDDT UNION
+		 SELECT * FROM GV_PBDT UNION
+		 SELECT * FROM GV_UVDT) AS DIEMTONGHOP
+	WHERE MSDT = @MSDT
+
+	IF @DTB < 5
+		SET @KQ = 'KHONGDAT'
+	ELSE
+		SET @KQ = 'DAT'
+	
+	RETURN @KQ
+END
+GO
+
+--2.1 THỰC THI
+SELECT DBO.KQ_DETAI('97001') AS KETQUA
+GO
+
+--2.2 KIỂM TRA
+SELECT AVG(DIEMTONGHOP.DIEM) AS DTB
+FROM (SELECT * FROM GV_HDDT UNION
+	  SELECT * FROM GV_PBDT UNION
+	  SELECT * FROM GV_UVDT) AS DIEMTONGHOP
+	WHERE MSDT = '97001'
+GO
+
+--2.3 KHÔI PHỤC DỮ LIỆU (NẾU CÓ)
+
+--2.4 XÓA
+DROP FUNCTION DBO.KQ_DETAI
+GO
+
+
+
+------------------------------------------------------------------------
+--CAU 3
+--3. Đưa vào MSDT, trả về mã số và họ tên của các sinh viên thực hiện đề tài.
+
+CREATE FUNCTION SV_THUCHIEN_DT (@MSDT CHAR(6)) 
+					RETURNS @SV TABLE (MSSV CHAR(8),
+									   TENSV NVARCHAR(30))
+AS
+BEGIN
+	INSERT @SV
+	SELECT T1.MSSV, TENSV
+	FROM SV_DETAI T1, SINHVIEN T2
+	WHERE T1.MSDT = @MSDT AND T1.MSSV = T2.MSSV
+	
+	RETURN
+END
+GO
+
+--3.1 THỰC THI
+SELECT * FROM DBO.SV_THUCHIEN_DT('97001')
+GO
+
+--3.2 KIỂM TRA
+SELECT T1.MSSV, TENSV
+FROM SV_DETAI T1, SINHVIEN T2
+WHERE T1.MSDT = '97001' AND T1.MSSV = T2.MSSV
+GO
+
+--3.3 KHÔI PHỤC DỮ LIỆU (NẾU CÓ)
+
+--3.4 XÓA
+DROP FUNCTION DBO.SV_THUCHIEN_DT
+GO
+

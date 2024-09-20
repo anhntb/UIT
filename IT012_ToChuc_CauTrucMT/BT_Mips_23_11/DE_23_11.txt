@@ -1,0 +1,14 @@
+Câu 1: Viết chương trình MIPS assembly tính tổng các giá trị được lưu trong các thanh ghi t($t0 -> $t7) và lưu kết quả vào thanh ghi $s0.
+
+Câu 2: Cho mảng A, mảng B có số phần tử lần lượt lưu trong thanh ghi s0(sizeA)
+và s1(sizeB). Địa chỉ nền của mảng A, B được lưu trong thanh ghi s2 và s3. Viết đoạn chương trình hợp ngữ MIPS.
+a/ Tìm giá trị lớn nhất của mảng A và lưu vào thanh ghi s4
+b/ Tính tổng giá trị của mảng B và lưu vào thanh ghi s5
+c/ Sinh viên chọn làm 1 trong các ý sau:
+	+ Giả sử số phần tử mảng A nhỏ hơn số phần mảng B. Hiện thực đoạn mã giả sau bằng hợp ngữ:
+	 For i=0; i++; i<size(A)
+		B[i] = A[i]
+
+	+ Viết đoạn mã hợp ngữ sắp xếp lại các phần tử trong mảng A theo thứ tự tăng dần
+
+	+ Viết đoạn mã hợp ngữ sắp xếp lại các phần tử trong mảng A theo thứ tự giảm dần 

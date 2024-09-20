@@ -1,0 +1,81 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\TRAM\\OneDrive - Tr\u01B0\u1EDDng \u0110H CNTT - University of Information Technology\\Courses\\QuanLyThongTin\\DoAn\\QLHangTonKho\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{EDE180E7-CC98-446E-ADF7-752A14ADDC5F}|QLHangTonKho.csproj|C:\\Users\\TRAM\\OneDrive - Tr\u01B0\u1EDDng \u0110H CNTT - University of Information Technology\\Courses\\QuanLyThongTin\\DoAn\\QLHangTonKho\\dao\\dataprovider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EDE180E7-CC98-446E-ADF7-752A14ADDC5F}|QLHangTonKho.csproj|solutionrelative:dao\\dataprovider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EDE180E7-CC98-446E-ADF7-752A14ADDC5F}|QLHangTonKho.csproj|c:\\users\\tram\\onedrive - tr\u01B0\u1EDDng \u0111h cntt - university of information technology\\courses\\quanlythongtin\\doan\\qlhangtonkho\\fadmin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EDE180E7-CC98-446E-ADF7-752A14ADDC5F}|QLHangTonKho.csproj|solutionrelative:fadmin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EDE180E7-CC98-446E-ADF7-752A14ADDC5F}|QLHangTonKho.csproj|C:\\Users\\TRAM\\OneDrive - Tr\u01B0\u1EDDng \u0110H CNTT - University of Information Technology\\Courses\\QuanLyThongTin\\DoAn\\QLHangTonKho\\fadmin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{EDE180E7-CC98-446E-ADF7-752A14ADDC5F}|QLHangTonKho.csproj|solutionrelative:fadmin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "DataProvider.cs",
+              "DocumentMoniker": "C:\\Users\\TRAM\\OneDrive - Tr\u01B0\u1EDDng \u0110H CNTT - University of Information Technology\\Courses\\QuanLyThongTin\\DoAn\\QLHangTonKho\\DAO\\DataProvider.cs",
+              "RelativeDocumentMoniker": "DAO\\DataProvider.cs",
+              "ToolTip": "C:\\Users\\TRAM\\OneDrive - Tr\u01B0\u1EDDng \u0110H CNTT - University of Information Technology\\Courses\\QuanLyThongTin\\DoAn\\QLHangTonKho\\DAO\\DataProvider.cs",
+              "RelativeToolTip": "DAO\\DataProvider.cs",
+              "ViewState": "AQIAAAcAAAAAAAAAAAAewBQAAAAQAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-02T18:19:40.749Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "fAdmin.cs",
+              "DocumentMoniker": "C:\\Users\\TRAM\\OneDrive - Tr\u01B0\u1EDDng \u0110H CNTT - University of Information Technology\\Courses\\QuanLyThongTin\\DoAn\\QLHangTonKho\\fAdmin.cs",
+              "RelativeDocumentMoniker": "fAdmin.cs",
+              "ToolTip": "C:\\Users\\TRAM\\OneDrive - Tr\u01B0\u1EDDng \u0110H CNTT - University of Information Technology\\Courses\\QuanLyThongTin\\DoAn\\QLHangTonKho\\fAdmin.cs",
+              "RelativeToolTip": "fAdmin.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAbAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-02T18:18:03.657Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "fAdmin.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\TRAM\\OneDrive - Tr\u01B0\u1EDDng \u0110H CNTT - University of Information Technology\\Courses\\QuanLyThongTin\\DoAn\\QLHangTonKho\\fAdmin.cs",
+              "RelativeDocumentMoniker": "fAdmin.cs",
+              "ToolTip": "C:\\Users\\TRAM\\OneDrive - Tr\u01B0\u1EDDng \u0110H CNTT - University of Information Technology\\Courses\\QuanLyThongTin\\DoAn\\QLHangTonKho\\fAdmin.cs [Design]",
+              "RelativeToolTip": "fAdmin.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-02T18:18:01.457Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

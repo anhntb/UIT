@@ -1,0 +1,290 @@
+﻿CREATE DATABASE QLDT;
+GO
+
+USE QLDT;
+GO
+
+--USE master ;  
+--GO  
+--DROP DATABASE QLDT ;  
+--GO  
+
+------------------------------------
+CREATE TABLE SINHVIEN
+(
+	MSSV CHAR(8) PRIMARY KEY,
+	TENSV NVARCHAR(30) NOT NULL,
+	SODT VARCHAR(10),
+	LOP CHAR(10) NOT NULL,
+	DIACHI NCHAR(30) NOT NULL
+)
+select*from SINHVIEN;
+-------------------------------------
+CREATE TABLE DETAI
+(
+	MSDT CHAR(6) PRIMARY KEY,
+	TENDT NVARCHAR(30) NOT NULL
+)
+select*from DETAI;
+-------------------------------------
+CREATE TABLE HOCVI
+(
+	MSHV INT, 
+	TENHV nvarchar(20) NOT NULL,
+	PRIMARY KEY(MSHV)
+)
+select*from HOCVI;
+--------------------------------------
+CREATE TABLE HOCHAM
+(
+	MSHH int, 
+	TENHH nvarchar(20) NOT NULL,
+	PRIMARY KEY(MSHH)
+)
+select*from HOCHAM;
+-------------------------------------
+CREATE TABLE SV_DETAI
+(
+	MSSV char(8), 
+	MSDT char(6),
+	PRIMARY KEY(MSSV, MSDT)
+)
+ALTER TABLE SV_DETAI ADD
+CONSTRAINT FK_SVDT_SV FOREIGN KEY(MSSV) REFERENCES SINHVIEN(MSSV),
+CONSTRAINT FK_SVDT_DT FOREIGN KEY(MSDT) REFERENCES DETAI(MSDT);
+select*from SV_DETAI;
+-------------------------------------
+CREATE TABLE GIAOVIEN
+(
+	MSGV	int, 
+	TENGV	nvarchar(30) NOT NULL, 
+	DIACHI	nvarchar(50) NOT NULL, 
+	SODT	varchar(10) NOT NULL, 
+	MSHH	int, 
+	NAMHH	smalldatetime NOT NULL,
+	PRIMARY KEY(MSGV)
+)
+ALTER TABLE GIAOVIEN ADD CONSTRAINT FK_GV_HH FOREIGN KEY(MSHH) REFERENCES HOCHAM(MSHH);
+select*from GIAOVIEN;
+------------------------------------
+CREATE TABLE CHUYENNGANH
+(
+	MSCN int, 
+	TENCN nvarchar(30) NOT NULL,
+	PRIMARY KEY(MSCN)
+)
+select*from CHUYENNGANH;
+-------------------------------------
+CREATE TABLE GV_HV_CN
+(
+	MSGV	int, 
+	MSHV	int, 
+	MSCN	int, 
+	NAM		smalldatetime NOT NULL,
+	PRIMARY KEY(MSGV, MSHV, MSCN)
+)
+ALTER TABLE GV_HV_CN ADD
+CONSTRAINT FK__GV FOREIGN KEY(MSGV) REFERENCES GIAOVIEN(MSGV),
+CONSTRAINT FK__HV FOREIGN KEY(MSHV) REFERENCES HOCVI(MSHV),
+CONSTRAINT FK__CN FOREIGN KEY(MSCN) REFERENCES CHUYENNGANH(MSCN);
+select*from GV_HV_CN;
+
+--------------------------------------
+CREATE TABLE GV_HDDT
+(
+	MSGV int, 
+	MSDT char(6), 
+	DIEM float NOT NULL,
+	PRIMARY KEY(MSGV, MSDT)
+)
+ALTER TABLE GV_HDDT ADD
+CONSTRAINT FK_HDDT_GV FOREIGN KEY(MSGV) REFERENCES GIAOVIEN(MSGV),
+CONSTRAINT FK_HDDT_DT FOREIGN KEY(MSDT) REFERENCES DETAI(MSDT);
+select*from GV_HDDT;
+--------------------------------------
+CREATE TABLE GV_PBDT
+(
+	MSGV int, 
+	MSDT char(6), 
+	DIEM float NOT NULL,
+	PRIMARY KEY(MSGV, MSDT)
+)
+ALTER TABLE GV_PBDT ADD
+CONSTRAINT FK_PBDT_GV FOREIGN KEY(MSGV) REFERENCES GIAOVIEN(MSGV),
+CONSTRAINT FK_PBDT_DT FOREIGN KEY(MSDT) REFERENCES DETAI(MSDT);
+select*from GV_PBDT;
+-------------------------------------
+CREATE TABLE GV_UVDT
+(
+	MSGV int, 
+	MSDT char(6), 
+	DIEM float NOT NULL,
+	PRIMARY KEY(MSGV, MSDT)
+)
+ALTER TABLE GV_UVDT ADD
+CONSTRAINT FK_UVDT_GV FOREIGN KEY(MSGV) REFERENCES GIAOVIEN(MSGV),
+CONSTRAINT FK_UVDT_DT FOREIGN KEY(MSDT) REFERENCES DETAI(MSDT);
+select*from GV_UVDT;
+
+-------------------------------------	
+
+CREATE TABLE HOIDONG
+(
+	MSHD		int, 
+	PHONG		int, 
+	TGBD		smalldatetime,
+	NGAYHD		smalldatetime NOT NULL, 
+	TINHTRANG	nvarchar(30) NOT NULL,
+	MSGV		int,
+	PRIMARY KEY(MSHD)
+)
+ALTER TABLE HOIDONG ADD CONSTRAINT FK_HD_GV FOREIGN KEY(MSGV) REFERENCES GIAOVIEN(MSGV);
+--DROP TABLE HOIDONG
+	
+-------------------------------------
+CREATE TABLE HOIDONG_GV
+(
+	MSHD	int, 
+	MSGV	int,
+	PRIMARY KEY(MSHD, MSGV)
+)
+--DROP TABLE HOIDONG_GV
+ALTER TABLE HOIDONG_GV ADD
+CONSTRAINT FK_HDGV_HD FOREIGN KEY(MSHD) REFERENCES HOIDONG(MSHD),
+CONSTRAINT FK_GDGV_GV FOREIGN KEY(MSGV) REFERENCES GIAOVIEN(MSGV);
+select*from HOIDONG_GV;
+--------------------------------------
+CREATE TABLE HOIDONG_DT
+(
+	MSHD		int , 
+	MSDT		char(6) , 
+	QUYETDINH	nchar(10),
+	PRIMARY KEY(MSHD, MSDT)
+)
+--DROP TABLE HOIDONG_DT
+alter table HOIDONG_DT add
+constraint FK_HDDT_HDong foreign key(MSHD) references HOIDONG(MSHD),
+constraint FK_HDDT_DTai foreign key(MSDT) references DETAI(MSDT);
+select*from HOIDONG_DT;
+
+SET DATEFORMAT DMY
+
+--A. Insert table SINHVIEN
+INSERT INTO SINHVIEN VALUES
+('13520001',N'Nguyễn Văn An','0906762255','SE103.U32',N'THỦ ĐỨC'),
+('13520002',N'Phan Tấn Đạt','0975672350','IE204.T21',N'QUẬN 1'),
+('13520003',N'Nguyễn Anh Hải','0947578688','IE205.R12',N'QUẬN 9'),
+('13520004',N'Phạm Tài','0956757869','IE202.A22',N'QUẬN 1'),
+('13520005',N'Lê Thúy Hằng','0976668688','SE304.E22',N'THỦ ĐỨC'),
+('13520006',N'Ưng Hồng Ân','0957475898','IE208.F33',N'QUẬN 2');
+
+---B. Insert table DETAI
+INSERT INTO DETAI VALUES
+('97001',N'Quản lý thư viện'),
+('97002',N'Nhận dạng vân tay'),
+('97003',N'Bán đấu giá trên mạng'),
+('97004',N'Quản lý siêu thị'),
+('97005',N'Xử lý ảnh'),
+('97006',N'Hệ giải toán thông minh');
+
+---C.Insert table SV_DETAI
+INSERT INTO SV_DETAI VALUES
+('13520001','97004'),
+('13520002','97005'),
+('13520003','97001'),
+('13520004','97002'),
+('13520005','97003'),
+('13520006','97005');
+--D. Insert table HOCHAM
+INSERT INTO HOCHAM VALUES
+(1,N'PHÓ GIÁO SƯ'),
+(2,N'GIÁO SƯ');
+---E. Insert table GIAOVIEN
+INSERT INTO GIAOVIEN VALUES(00201,N'Trần Trung',N'Bến Tre','35353535',1,'1996'),
+(00202,N'Nguyễn Văn An',N'Tiền Giang','67868688',1,'1996'),
+(00203,N'Trần Thu Trang',N'Cần Thơ','74758687',1,'1996'),
+(00204,N'Nguyễn Thị Loan',N'TP. HCM','56575868',2,'2005'),
+(00205,N'Chu Tiến',N'Hà Nội','46466646',2,'2005');
+---F.Insert table HOCVI
+INSERT INTO HOCVI VALUES
+(1,N'Kỹ sư'),
+(2,N'Cử Nhân'),
+(3,N'Thạc sĩ'),
+(4,N'Tiến sĩ'),
+(5,N'Tiến sĩ Khoa học');
+---G. Insert table CHUYENNGANH
+INSERT INTO CHUYENNGANH VALUES
+(1,N'Công nghệ Web'),
+(2,N'Mạng xã hội'),
+(3,N'Quản lý CNTT'),
+(4,N'GIS');
+---H. Insert table GV_HV_CN
+INSERT INTO GV_HV_CN VALUES
+(00201,1,1,'2013'),
+(00201,1,2,'2013'),
+(00201,2,1,'2014'),
+(00202,3,2,'2013'),
+(00203,2,4,'2014'),
+(00204,3,2,'2014');
+---I. Insert table GV_HDDT
+INSERT INTO GV_HDDT VALUES
+(00201,'97001',8),
+(00202,'97002',7),
+(00205,'97001',9),
+(00204,'97004',7),
+(00203,'97005',9);
+---J. Insert table GV_PBDT
+INSERT INTO GV_PBDT VALUES
+(00201,'97005',8),
+(00202,'97001',7),
+(00205,'97004',9),
+(00204,'97003',7),
+(00203,'97002',9);
+---K. Insert table GV_UVDT
+INSERT INTO GV_UVDT VALUES
+(00205,'97005',8),
+(00202,'97005',7),
+(00204,'97005',9),
+(00203,'97001',7),
+(00204,'97001',9),
+(00205,'97001',8),
+(00203,'97003',7),
+(00201,'97003',9),
+(00202,'97003',7),
+(00201,'97004',9),
+(00202,'97004',8),
+(00203,'97004',7),
+(00201,'97002',9),
+(00204,'97002',7),
+(00205,'97002',9),
+(00201, '97006', 9),
+(00202, '97006', 7),
+(00204, '97006', 9);
+---L. Insert table HOIDONG
+INSERT INTO HOIDONG VALUES
+(1,002,'7:00','29/11/2014',N'Thật',00201),
+(2,102,'7:00','5/12/2014',N'Thật',00202),
+(3,003,'8:00','6/12/2014',N'Thật',00203);
+---M. Insert table HOIDONG_GV
+INSERT INTO HOIDONG_GV VALUES
+(1,00201),
+(1,00202),
+(1,00203),
+(1,00204),
+(2,00203),
+(2,00202),
+(2,00205),
+(2,00204),
+(3,00201),
+(3,00202),
+(3,00203),
+(3,00204);
+---N. Insert table HOIDONG_DT
+INSERT INTO HOIDONG_DT VALUES
+(1,'97001',N'Được'),
+(1,'97002',N'Được'),
+(2,'97001',N'Không'),
+(2,'97004',N'Không'),
+(1,'97005',N'Được'),
+(3,'97001',N'Không'),
+(3,'97002',N'Được');

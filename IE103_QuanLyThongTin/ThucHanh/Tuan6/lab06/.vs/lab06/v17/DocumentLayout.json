@@ -1,0 +1,64 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\TRAM\\OneDrive - Tr\u01B0\u1EDDng \u0110H CNTT - University of Information Technology\\Courses\\IE103_QuanLyThongTin\\ThucHanh\\Tuan6\\lab06\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{7C8AFF36-E1F5-45E7-9F28-A0C7D7B98837}|lab06.csproj|c:\\users\\tram\\onedrive - tr\u01B0\u1EDDng \u0111h cntt - university of information technology\\courses\\ie103_quanlythongtin\\thuchanh\\tuan6\\lab06\\crystalreport1.rpt||{C0EF7560-990E-4D61-B970-65A6096B6866}",
+      "RelativeMoniker": "D:0:0:{7C8AFF36-E1F5-45E7-9F28-A0C7D7B98837}|lab06.csproj|solutionrelative:crystalreport1.rpt||{C0EF7560-990E-4D61-B970-65A6096B6866}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7C8AFF36-E1F5-45E7-9F28-A0C7D7B98837}|lab06.csproj|c:\\users\\tram\\onedrive - tr\u01B0\u1EDDng \u0111h cntt - university of information technology\\courses\\ie103_quanlythongtin\\thuchanh\\tuan6\\lab06\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{7C8AFF36-E1F5-45E7-9F28-A0C7D7B98837}|lab06.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Form1.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\TRAM\\OneDrive - Tr\u01B0\u1EDDng \u0110H CNTT - University of Information Technology\\Courses\\IE103_QuanLyThongTin\\ThucHanh\\Tuan6\\lab06\\Form1.cs",
+              "RelativeDocumentMoniker": "Form1.cs",
+              "ToolTip": "C:\\Users\\TRAM\\OneDrive - Tr\u01B0\u1EDDng \u0110H CNTT - University of Information Technology\\Courses\\IE103_QuanLyThongTin\\ThucHanh\\Tuan6\\lab06\\Form1.cs [Design]",
+              "RelativeToolTip": "Form1.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-27T16:05:51.426Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "CrystalReport1.rpt",
+              "DocumentMoniker": "C:\\Users\\TRAM\\OneDrive - Tr\u01B0\u1EDDng \u0110H CNTT - University of Information Technology\\Courses\\IE103_QuanLyThongTin\\ThucHanh\\Tuan6\\lab06\\CrystalReport1.rpt",
+              "RelativeDocumentMoniker": "CrystalReport1.rpt",
+              "ToolTip": "C:\\Users\\TRAM\\OneDrive - Tr\u01B0\u1EDDng \u0110H CNTT - University of Information Technology\\Courses\\IE103_QuanLyThongTin\\ThucHanh\\Tuan6\\lab06\\CrystalReport1.rpt",
+              "RelativeToolTip": "CrystalReport1.rpt",
+              "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAPdSURBVDhPrZRbaBxVGMf/c9nd2Vuyu9nN5m7aStI2oWtSCBgtWgj10oe2D2Le1FRRBBEk\u002BCJo8amIIL5U0BfFF6mFalOs0CdrWqhJNkmTUEyyzaXuJpvsdXZ2dnauntmdbJvEvvkb/pxvZr7vP\u002Bec\u002BTj4XzEMg7LCCj39z7/y6vC7n1m3T2RtaWHi8ncXP7Bud8FaYwVPnS94pPeZgcihIBiGBkWuvfyzXcC0P9SsKrJ08\u002Br3XxbymaT1qgJjjRXaOrsiz518\u002BdyJSCv8Xid8HgcCXo7Ej1QQZciGrf7EswN9W\u002BlMLpva3hCLfNayAG2NNcw50RSFYklBtiAhs0diWYXXZcfxo23O4fMfXewbHHrNWx8IV6v/w7AGcSa\u002B\u002B0VebeVEXBuPgSezPT383qdDZ98YrRY9YYYmDKlm6KpkWsLvxhg2qTjaw14M9rRg4EgTBntbcKCtwel2OzmrbLchRUxoYmBe5kjTNAS6gHvGLK4LV/FD/lssUBMIB9xosuThbOSjj2z2GJr7txNTyGgpLGl/Y5G6j/viPH4VruAX4WfMKzOVD5qzN/Meh2ZcjRxRHZGPste7dIOGphuQjCKiUhTjpXFojAyH7oCmabjJ38Cl9FfIKCkYlLbPkG0\u002Bc/lFQI\u002BQOEg1cpGlDYP8TQVjxetYLi9DhYZcKYdCloeqqSQViKYn8f7GCL4\u002BdolsjrPqZMF\u002B8\u002BExV1lRfGleaY5tlP0zqzIu/JQC6\u002BtCOryCXDgKw6OD1hhIs2WU4xI6mjsx\u002BvrHaORCyFCCZVWFVgtri7qw/mebt3Br4BC73NPBIZGWEVsM4uFsL9KrByGyAkkkWxFX0cf24/zRt/FC6CQ8Ns\u002B\u002BJTM5tX47OrOwSp6vdbb6Q4c73Kc4O4tYUkN6MwRKDsLuT0HMJ/CU1I43B0bw1tBIxcjUZlpAdGpqYvavWzcqhrH524jN39FFxVZk65qebm1uOHeqP4BkXsc2r0NM\u002BWE8OAy7L4rPX/oEZyJnwZI22WmvZKaE6ejkxPTdqmGtbebu/oa529dgt7FwO\u002B3obnGgI2iDi2PgdzRg9MAFdLl6YZBcilSZKzXbj5whtVYzqRlKRR6lYp4kUzBbJ1cCNFJZ72Hhd9sRtIXB6nboul5b7uPaoWZoompAtghMLEuIZwxyhDFoD9LoDqvI8SISKQFxcnytb/E1lWS1cpjssOs8pGiGVw37yty61Ej\u002BC9cZouBlVTHoKKTWE7liOsvL0EpaucSbK6\u002BR2kqsWeFuw5YAN336eOCLsqK\u002BIxSl7rwgI54UZhaWtn9cXElOKqr28N6dMX7qjyuKVbIH4F/CwpxOdjf1iQAAAABJRU5ErkJggg==",
+              "WhenOpened": "2024-06-27T16:05:42.896Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

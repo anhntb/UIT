@@ -1,0 +1,109 @@
+USE master
+IF EXISTS (SELECT * FROM SYS.DATABASES WHERE NAME = 'QLBH')
+BEGIN
+	ALTER DATABASE QLBH SET SINGLE_USER WITH ROLLBACK IMMEDIATE;
+	DROP DATABASE QLBH;
+END
+GO
+
+CREATE DATABASE QLBH
+GO
+
+USE QLBH
+GO
+
+SET DATEFORMAT DMY
+GO
+
+----------------------------KHACHHANG-----------------------
+CREATE TABLE KHACHHANG
+(
+	MAKH CHAR(4) CONSTRAINT PK_MAKH PRIMARY KEY,
+	HOTEN VARCHAR(40),
+	DCHI VARCHAR(50),
+	SODT VARCHAR(20),
+	NGSINH SMALLDATETIME,
+	DOANHSO MONEY,
+	NGDK SMALLDATETIME
+)
+GO
+
+---------------------------NHANVIEN--------------------------
+CREATE TABLE NHANVIEN
+(
+	MANV CHAR(4) CONSTRAINT PK_MANV PRIMARY KEY,
+	HOTEN VARCHAR(40),
+	SODT VARCHAR(20),
+	NGVL SMALLDATETIME
+)
+GO
+
+--------------------------SANPHAM-----------------------------
+CREATE TABLE SANPHAM
+(
+	MASP CHAR(4) CONSTRAINT PK_MASP PRIMARY KEY,
+	TENSP VARCHAR(40),
+	DVT VARCHAR(20),
+	NUOCSX VARCHAR(40),
+	GIA MONEY
+)
+GO
+
+----------------------------HOADON----------------------
+CREATE TABLE HOADON
+(
+	SOHD INT CONSTRAINT PK_SOHD PRIMARY KEY,
+	NGHD SMALLDATETIME,
+	MAKH CHAR(4) CONSTRAINT FK_MAKH FOREIGN KEY REFERENCES KHACHHANG(MAKH),
+	MANV CHAR(4) CONSTRAINT FK_MANV FOREIGN KEY REFERENCES NHANVIEN(MANV),
+	TRIGIA MONEY
+)
+GO
+
+---------------------------CTHD---------------------------
+CREATE TABLE CTHD
+(
+	SOHD INT CONSTRAINT FK_SOHD FOREIGN KEY REFERENCES HOADON(SOHD),
+	MASP CHAR(4) CONSTRAINT FK_MASP FOREIGN KEY REFERENCES SANPHAM(MASP),
+	SL INT
+	CONSTRAINT PK_SOHD_MASP PRIMARY KEY(SOHD, MASP)
+)
+GO
+
+-----------------------------------------------------------------------
+--2.Them vao thuoc tinh GHICHU co kieu du lieu varchar(20) cho SANPHAM
+ALTER TABLE SANPHAM ADD GHICHU VARCHAR(20)
+GO
+
+--3.Them vao thuoc tinh LOAIKH co kieu du lieu la tinyint cho quan he KHACHHANG
+ALTER TABLE KHACHHANG ADD LOAIKH TINYINT
+GO
+
+--4.Sua kieu du lieu cua thuoc tinh GHICHU trong quan he SANPHAM thanh varchar(100)
+ALTER TABLE SANPHAM ALTER COLUMN GHICHU VARCHAR(100)
+GO
+
+--5.Xoa thuoc tinh GHICHU trong quan he SANPHAM
+ALTER TABLE SANPHAM DROP COLUMN GHICHU
+GO
+
+--6.Lam the nao de them thuoc tinh LOAIKH trong quan he KHACHHANG co the luu cac gia tri la:
+--Vang lai, Thuong xuyen, Vip,...
+ALTER TABLE KHACHHANG ALTER COLUMN LOAIKH VARCHAR(20)
+GO
+
+--7.Don vi tinh cua san pham chi co the la (cay, hop, cai, quyen, chuc)
+ALTER TABLE SANPHAM ADD CONSTRAINT CK_DVT CHECK(DVT IN('cay', 'hop', 'cai', 'quyen', 'chuc'))
+GO
+
+--8.Gia ban cua san pham tu 500 tro len
+ALTER TABLE SANPHAM ADD CONSTRAINT CK_GIA CHECK(GIA >= 500)
+GO
+
+--9.Moi lan mua hang, khach hang phai mua it nhat 1 san pham
+ALTER TABLE CTHD ADD CONSTRAINT CK_SL CHECK(SL > 0)
+GO
+
+--10.Ngay khach hang dang ky la khach hang thanh vien phai lon hon ngay sinh cua nguoi do
+ALTER TABLE KHACHHANG ADD CONSTRAINT CK_NGDK CHECK(NGDK > NGSINH)
+GO

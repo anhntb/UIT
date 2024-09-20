@@ -1,0 +1,24 @@
+*mô hình dữ liệu phảng
+- flat-file database: toàn bộ dữ liệu trên 1 mặt phẳng, chỉ có 1 bảng duy nhất
+	+ không có mối quan hệ, không có cấu trúc
+		-> không thực hiện được các truy vấn liên kết bảng (A join B)
+
+
+*mô hình dữ liệu có cấu trúc
+- mô hình phân cấp: dữ liệu tổ chức theo mối quan hệ cha-con ( 1 cha -> n con, không có chiều ngược lại)
+	+ ngoại trừ root node, các node khác đều có node cha
+		-> nhược điểm: khi thay đổi dữ liệu, cần thay đổi hết dữ liệu của những node có liên quan
+				để đảm bảo tính nhất quán
+
+- mô hình mạng: các node là các thực thể, một con có thể có nhiều cha
+
+- chỉ mục và khóa: chỉ có 2 cột, 1 cột là khóa chính (ID), 1 cột là con trỏ chỉ tới (lưu địa chỉ)
+	+ chỉ mục trên cột là khóa
+		-> dùng chỉ mục dày (dense index), chỉ 1 dữ liệu duy nhất 
+	+ chỉ mục trên cột không là khóa
+		-> dùng chỉ mục thưa (nondense index), xếp theo cụm dữ liệu
+
+- B-Tree: cây cân bằng, 1 node có thể có nhiều khóa
+
+
+*mô hình quan hệ: gồm nhiều thực thể, một thực thể là 1 bảng riêng

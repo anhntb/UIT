@@ -1,0 +1,13 @@
+chạy từ ví dụ 2-1
+không chạy ví dụ 2-10
+bật máy ảo: 
+
+
+2-3: chmod +x tên file
+/bin/sh ex3.sh
+
+
+2-8
+read trythis
+
+Chuẩn bị lab03 trước
