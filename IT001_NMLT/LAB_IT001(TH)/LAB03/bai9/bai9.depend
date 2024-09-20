@@ -1,0 +1,29 @@
+# depslib dependency file v1.0
+1671198359 source:c:\users\ntb_anh\downloads\code\lab03\bai9\9.b.cpp
+	<iostream>
+
+1671199349 source:c:\users\ntb_anh\downloads\code\lab03\bai9\main.cpp
+	<iostream>
+
+1671200110 source:c:\users\ntb_anh\downloads\code\lab03\bai9\9.a.cpp
+	<iostream>
+	<time.h>
+
+1671198853 source:c:\users\ntb_anh\downloads\code\lab03\bai9\9.c.cpp
+	<iostream>
+
+1671199349 source:c:\users\ntb_anh\downloads\code\lab03\bai9\9.d.cpp
+	<iostream>
+
+1671200419 source:c:\users\ntb_anh\downloads\code\lab03\bai9\9.e.cpp
+	<iostream>
+
+1671200667 source:c:\users\ntb_anh\downloads\code\lab03\bai9\9.f.cpp
+	<iostream>
+
+1671200956 source:c:\users\ntb_anh\downloads\code\lab03\bai9\9.g.cpp
+	<iostream>
+
+1671201328 source:c:\users\ntb_anh\downloads\code\lab03\bai9\9.h.cpp
+	<iostream>
+

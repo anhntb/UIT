@@ -1,0 +1,32 @@
+# depslib dependency file v1.0
+1671164304 source:c:\users\ntb_anh\downloads\code\lab03\bai8\8.1.cpp
+	<iostream>
+
+1671189915 source:c:\users\ntb_anh\downloads\code\lab03\bai8\main.cpp
+	<iostream>
+
+1671168170 source:c:\users\ntb_anh\downloads\code\lab03\bai8\8.2.cpp
+	<iostream>
+	<time.h>
+
+1671190106 source:c:\users\ntb_anh\downloads\code\lab03\bai8\8.3.cpp
+	<iostream>
+
+1671174601 source:c:\users\ntb_anh\downloads\code\lab03\bai8\8.4.cpp
+	<iostream>
+
+1671175280 source:c:\users\ntb_anh\downloads\code\lab03\bai8\8.5.cpp
+	<iostream>
+
+1671186307 source:c:\users\ntb_anh\downloads\code\lab03\bai8\8.6.cpp
+	<iostream>
+
+1671186763 source:c:\users\ntb_anh\downloads\code\lab03\bai8\8.7.cpp
+	<iostream>
+
+1671189820 source:c:\users\ntb_anh\downloads\code\lab03\bai8\8.8.cpp
+	<iostream>
+
+1671190256 source:c:\users\ntb_anh\downloads\code\lab03\bai8\8.9.cpp
+	<iostream>
+

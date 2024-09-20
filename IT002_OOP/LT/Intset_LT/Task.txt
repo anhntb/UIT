@@ -1,0 +1,31 @@
+class Intset
+{
+private:
+	int* value;
+	int size;
+
+public:
+};
+
+Intset s1, s2(3);
+Intset s3(s1), s4 = s2;
+
+s1 = s2 + s3;
+s1 = s2 + 3;
+s1 = s2 - s3;
+s1 = s2 - 3;
+
+if(a==b){cout << "giống";}
+
+bool contains() 
+kiểm tra có chứa hay không
+
+void push() thêm phần tử
+
+Intset a;
+cout << a;
+cin >> a;
+cout << a[1];
+
+//? không thể thực hiện c = a + (Intset)1 + (Intset)2 + 3 +...
+//? từ dấu + thứ 3 sẽ bị lỗi chèn mất dữ liệu

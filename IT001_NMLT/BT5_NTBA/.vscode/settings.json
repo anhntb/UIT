@@ -1,0 +1,10 @@
+{
+    "files.associations": {
+        "*.json": "cpp",
+        "iostream": "cpp",
+        "*.tcc": "cpp",
+        "cmath": "cpp",
+        "cstdlib": "cpp",
+        "ostream": "cpp"
+    }
+}

@@ -1,0 +1,9 @@
+# depslib dependency file v1.0
+1665601938 source:c:\users\ntb_anh\downloads\code\th1\bai12\main.cpp
+	<iostream>
+	<time.h>
+
+1666667390 source:c:\users\ntb_anh\downloads\code\lab01\bai12\main.cpp
+	<iostream>
+	<time.h>
+

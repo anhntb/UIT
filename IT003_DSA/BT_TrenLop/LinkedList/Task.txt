@@ -1,0 +1,26 @@
+Giả sử người ta có nhu cầu 
+sử dụng danh sách liên kết đơn 
+để lưu trữ các số nguyên dương,
+có giá trị từ 1 đến 30.000. 
+Hãy thực hiện các yêu cầu sau:
+
++a: định nghĩa cấu trúc dữ liệu 
+    để có thể lưu trữ như yêu cầu
+
++b: viết hàm nhập các số nguyên dương 
+    vào danh sách,
+    việc nhập kết thúc khi nhập giá trị -1
+
++c: viết hàm in ra các số nguyên tố 
+    trong danh sách,
+    nếu danh sách rỗng thì in ra là 0
+
++d: viết hàm sắp xếp danh sách 
+    theo giá trị của phần tử 
+    trong danh sách,
+    sao cho giá trị phần tử giảm dần 
+    và in ra màn hình
+
++e: viết hàm nhập một số nguyên dương x,
+    và thêm x vào danh sách trong câu d, 
+    sao cho danh sách vẫn đảm bảo giảm dần

@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1671792694 source:c:\users\ntb_anh\downloads\code\lab04\bai2\main.cpp
+	<iostream>
+	<ctime>
+	<cmath>
+

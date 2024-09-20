@@ -1,0 +1,37 @@
+# depslib dependency file v1.0
+1671116611 source:c:\users\ntb_anh\downloads\code\lab03\bai4\main.cpp
+	<iostream>
+
+1671111989 source:c:\users\ntb_anh\downloads\code\lab03\bai4\4.1.cpp
+	<iostream>
+	<math.h>
+
+1671111989 source:c:\users\ntb_anh\downloads\code\lab03\bai4\4.2.cpp
+	<iostream>
+
+1671111828 source:c:\users\ntb_anh\downloads\code\lab03\bai4\4.3.cpp
+	<iostream>
+
+1671112145 source:c:\users\ntb_anh\downloads\code\lab03\bai4\4.4.cpp
+	<iostream>
+	<math.h>
+
+1671112458 source:c:\users\ntb_anh\downloads\code\lab03\bai4\4.5.cpp
+	<iostream>
+	<math.h>
+
+1671113080 source:c:\users\ntb_anh\downloads\code\lab03\bai4\4.6.cpp
+	<iostream>
+
+1671113080 source:c:\users\ntb_anh\downloads\code\lab03\bai4\4.7.cpp
+	<iostream>
+
+1671113392 source:c:\users\ntb_anh\downloads\code\lab03\bai4\4.8.cpp
+	<iostream>
+
+1671113609 source:c:\users\ntb_anh\downloads\code\lab03\bai4\4.9.cpp
+	<iostream>
+
+1671114130 source:c:\users\ntb_anh\downloads\code\lab03\bai4\4.10.cpp
+	<iostream>
+
