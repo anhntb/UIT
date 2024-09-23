@@ -3,8 +3,8 @@
 
 //import React in our code
 import React, {useState} from 'react';
-
-//import all the components we are going to 
+//test
+//import all the components we are going to use
 import {
     FlatList,
     View,
