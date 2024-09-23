@@ -4,7 +4,7 @@
 //import React in our code
 import React, {useState} from 'react';
 
-//import all the components we are going to use
+//import all the components we are going to 
 import {
     FlatList,
     View,
