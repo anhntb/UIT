@@ -1,0 +1,8 @@
+bai1
+bai1.c
+lab06
+lab06.c
+test
+test.c
+test.txt
+test1.txt
