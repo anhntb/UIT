@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Khám Bệnh</title>
+</head>
+<body style="margin: 50px;">
+    <form style="border: 2px solid black;
+                border-radius: 10px;
+                width: 300px;
+                height: 350px;
+                margin: auto;
+                padding: 10px;">
+        <div style="text-align: center;">
+            <p style="font-size: 20px;
+                    font-weight: bold;">
+                ĐỂ LẠI NHU CẦU KHÁM
+            </p>
+
+            <p style="font-size: 17px;
+                    color: rgb(50, 50, 50);">
+                Đặt hẹn ngay để nhận tư vấn và xếp lịch khám kịp thời
+            </p>
+        </div>
+
+        <div align="center">
+            <input style="width: 250px;
+                        height: 30px;
+                        color: gray;
+                        border-top-left-radius: 10px;
+                        border-top-right-radius: 10px;";
+                    type="text"; id="fName"; value="Họ và tên">
+            <input style="width: 250px;
+                    height: 30px;
+                    color: gray;"
+                type="date"; id="fDoB";>
+            <input style="width: 250px;
+                height: 30px;
+                color: gray;"
+                type="tel"; id="fPhoneNum"; value="Điện thoại">
+
+            <select id="fAddress";
+                    style="width:255px;
+                        height: 30px;
+                        color: gray;
+                        border-bottom-left-radius: 10px;
+                        border-bottom-right-radius: 10px;">
+                <option value="0"; selected="selected">Chọn địa điểm gần bạn nhất</option>
+                <optgroup label="Miền Bắc">
+                    <option value="1">Hà Nội - Hạ Long - Sapa</option>
+                    <option value="2">Hà Nội - Chùa Hương - Ninh Bình</option>
+                    <option value="3">Hà Nội - Cát Bà - Tuần Châu</option>
+                </optgroup>
+                <optgroup label="Miền Trung">
+                    <option value="4">Huế - Bạch Mã - Đà Nẵng</option>
+                    <option value="5">Nha Trang - Đà Lạt</option>
+                    <option value="6">Buôn Mê Thuột - Gia Lai - Kontum</option>
+                </optgroup>
+                <optgroup label="Miền Nam">
+                    <option value="7">TpHCM - Cần Thơ - Cà Mau</option>
+                    <option value="8">Phú Quốc - Côn Đảo</option>
+                </optgroup>
+            </select>
+        </div>
+
+        <div align="center">
+            <br>
+            <input type="submit"; id="fSubmit"; value="GỬI YÊU CẦU";
+                    style="width: 250px;
+                        height: 30px;
+                        background-color: orange;
+                        color: white;
+                        font-size: 15px;
+                        font-weight: bold;
+                        border-color: orange;
+                        border-radius: 5px;">
+        </div>
+    </form>
+</body>
+</html>

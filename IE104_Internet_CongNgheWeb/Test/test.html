@@ -1,15 +1,31 @@
-<!-- html:5 -->
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Form with Border</title>
+    <style>
+        /* Style the form with a border */
+        form {
+            border: 2px solid #4CAF50; /* Green border */
+            padding: 20px;             /* Add some padding inside the form */
+            width: 300px;              /* Set form width */
+            margin: auto;              /* Center the form on the page */
+            border-radius: 10px;       /* Optional: rounded corners */
+        }
+    </style>
 </head>
 <body>
-    <p>Test 12</p> 
+
+    <form action="/submit-form" method="post">
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name"><br><br>
+        
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email"><br><br>
+        
+        <input type="submit" value="Submit">
+    </form>
+
 </body>
 </html>
-
-
