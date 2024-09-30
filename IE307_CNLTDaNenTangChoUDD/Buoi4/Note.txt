@@ -1,0 +1,10 @@
+Cài đặt react-navigation:
+    npm install @react-navigation/native
+Cài đặt các thư viện hỗ trợ (đối với project expo):
+    npx expo install react-native-screens react-native-safe-area-context
+Cài đặt Stack Navigator:
+    npm install @react-navigation/native-stack
+
+npm install @react-navigation/drawer
+
+npx expo install react-native-gesture-handler react-native-reanimated
