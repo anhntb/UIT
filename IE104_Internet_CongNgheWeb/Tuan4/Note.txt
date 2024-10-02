@@ -1,0 +1,9 @@
+Thuộc tính
+
+1.Định dạng văn bản
+2.Display
+3.Position
+4.Border
+5.
+6.
+7.

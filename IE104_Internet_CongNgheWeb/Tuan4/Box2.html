@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .block-element {
+            display: inline-block;
+            /*
+            display: block;
+            display: inline;
+            */
+            padding: 10px;
+            margin: 5px;
+            background-color: beige;
+            border: 1px solid darkcyan;
+            
+        }
+
+        .flex-container {
+            display: flex;
+            justify-content: space-around;
+            /* Canh chỉnh cách đều ele con */
+
+            margin-top: 50px;
+        }
+
+        .flex-element {
+            background-color: bisque;
+            padding: 10px;
+            border: 2px solid darkorange;
+            border-radius: 5px;
+        }
+
+        .flex-element:hover {
+            background-color: lightsalmon;
+            color: white;
+        }
+    </style>
+</head>
+<body style="margin-top: 50px;">
+    <div>
+        <div class="block-element">Block Element 1</div>
+        <div class="block-element">Block Element 2</div>
+        <div class="block-element">Block Element 3</div>
+        <div class="block-element">Block Element 4</div>
+    </div>
+
+    <div class="flex-container">
+        <div class="flex-element">Flex Element 1</div>
+        <div class="flex-element">Flex Element 2</div>
+        <div class="flex-element">Flex Element 3</div>
+        <div class="flex-element">Flex Element 4</div>
+    </div>
+</body>
+</html>
