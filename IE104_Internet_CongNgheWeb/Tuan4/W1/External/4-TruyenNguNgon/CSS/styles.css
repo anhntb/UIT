@@ -1,0 +1,25 @@
+#title {
+    border-color: lightgreen; 
+    text-align: center;
+    width: 100%;
+                
+}
+
+#td1 {
+    color: tomato;
+    font-size: 30px;
+}
+
+#span1 {
+    color: lightgreen;
+    font-size: 30px;
+    font-style: italic;
+    font-weight: bold;
+}
+
+#MotNguoi {
+    src: url(../images/ChiCoMotNguoiThoi.gif);
+    alt: "Một bà cụ";
+    float: right;
+    height: 180px;
+}
