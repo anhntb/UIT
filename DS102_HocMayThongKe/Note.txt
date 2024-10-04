@@ -1,0 +1,18 @@
+Đồ án:
+nên làm nhiều thuật toán để có phần so sánh kết quả của các thuật toán.
+
+Dự đoán giá nhà dựa trên dân số: Các thuật toán hồi quy
++diện tích
++vị trí
+
+cách thu thập, ở đâu, chất lượng dữ lieu
+dùng thư viện: beautifulsoup, bs4 để lấy dữ liệu
+các trang giá cổ phiếu
+dự đoán giá cổ phiếu
+
+
+lấy dữ liệu có sẵn: Kaggle, UCI
+
+
+Machine Learning cơ bản
+Vũ Hữu Tiệp (bìa xanh dương)
