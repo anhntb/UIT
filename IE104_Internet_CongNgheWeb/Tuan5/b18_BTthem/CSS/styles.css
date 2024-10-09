@@ -1,28 +1,35 @@
 .container {
-    margin: auto;
-    margin-top: 50px;
+    margin: 50px auto;
     background-color: whitesmoke;
-    width: 50%;
+    width: 500px;
+    height: 700px;
+    padding: 20px;
 }
 
 .row-box {
-    margin: 20px;
+    padding: 10px;
+    width: 100%;
 }
 
 .column-box1 {
-    margin: 20px;
+    width: 25%;
     float: left;
 }
 
 .column-box2 {
-    margin-top: 20px;
-    padding:10px;
+    width: 75%;
     float: left;
-    width: 470px;
 }
 
 hr {
     border-style: dashed;
-    width: 90%;
     color: red;
+}
+
+.titleInfo {
+    font-weight: bold;
+}
+
+.content {
+    color: gray;
 }
