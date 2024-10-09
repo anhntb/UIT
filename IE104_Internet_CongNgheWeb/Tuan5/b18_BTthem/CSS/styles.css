@@ -1,0 +1,28 @@
+.container {
+    margin: auto;
+    margin-top: 50px;
+    background-color: whitesmoke;
+    width: 50%;
+}
+
+.row-box {
+    margin: 20px;
+}
+
+.column-box1 {
+    margin: 20px;
+    float: left;
+}
+
+.column-box2 {
+    margin-top: 20px;
+    padding:10px;
+    float: left;
+    width: 470px;
+}
+
+hr {
+    border-style: dashed;
+    width: 90%;
+    color: red;
+}
