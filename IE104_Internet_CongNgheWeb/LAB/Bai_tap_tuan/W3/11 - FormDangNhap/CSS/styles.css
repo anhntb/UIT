@@ -1,24 +1,61 @@
 .container {
-    margin: auto;
-    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url(../images/login.jpg);
+    background-repeat: no-repeat;
+    background-size: 15%;
+    background-position: 800px;
+}
+
+.form {
     width: fit-content;
-    border: 1px solid black;
-    padding: 30px 20px 50px 20px;
+    border-radius: 10px;
+    border-width: 4px;
+    border-color: brown;
+    border-style: dotted;
+    padding: 30px 150px 100px 150px;
 }
 
 .titleInfo {
-    font-size: 25px;
+    font-size: 40px;
     font-weight: bold;
     text-align: center;
+    color: brown;
 }
 
 .box {
     padding-top: 20px;
     display: grid;
     grid-template-columns: 3fr 5fr;
-    gap: 5px;
+    gap: 10px;
+}
+
+.textInfo {
+    text-align: right;
+}
+
+.textBox {
+    border: 2px dotted brown;
+    border-radius: 10px;
+    padding: 2px 7px 2px 7px;
+    background-color: lightpink;
+    opacity: 0.5;
 }
 
 .btn {
-    
+    width: fit-content;
+    padding: 3px 7px 3px 7px;
+    background-color: red;
+    border-radius: 10px;
+    color: white;
+    box-shadow: 0px 0px 5px black;
+    border: 0px;
 }
+
+.btn:hover {
+    background-color: brown;
+    font-weight: bold;
+}
+
