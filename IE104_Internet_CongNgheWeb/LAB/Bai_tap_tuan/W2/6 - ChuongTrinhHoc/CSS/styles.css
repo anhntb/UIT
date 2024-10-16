@@ -1,7 +1,8 @@
-body {
+.container {
     background-image: url(../images/nguyen-tac-trong-thiet-ke-do-hoa.jpg), url(../images/truong_day_thiet_ke_do_hoa.jpg);
     background-repeat: repeat-x, no-repeat;
     background-position: 0px 0px, 240px 320px;
+    height: 100vh;
 }
 .backgroundInfo {
     
@@ -10,7 +11,7 @@ body {
 .titleInfo {
     font-size: 30px;
     font-weight: bold;
-    margin-top: 150px;
+    padding-top: 150px;
     margin-bottom: 30px;
     text-align: center;
     color: greenyellow;
