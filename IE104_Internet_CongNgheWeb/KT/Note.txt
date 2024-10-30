@@ -1,0 +1,7 @@
+Bài 1: click ẩn hiện, password. Kiểm tra pass, UIT 12345. Đúng thì hiện thông báo
+Bài 2: cách cộng trừ thời gian. Ví dụ nhập vào ngày sinh, kiểm tra đã sống được bao lâu
+Bài 3: click vào nút góp ý thì hiện lên ...
+
+Đặt tên file theo mssv
+3 bài tạo 3 file html, viết css, js nội tuyến
+Không nén file, nộp nhiều file
