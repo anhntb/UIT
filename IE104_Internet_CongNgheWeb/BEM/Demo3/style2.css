@@ -1,0 +1,96 @@
+/* Card Container */
+.card {
+    width: 60%;
+    border: 3px solid #000;
+    border-radius: 5px;
+    overflow: hidden;
+    display: flex;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+/* Card Image */
+.image {
+    width: 10%;
+    float: left;
+}
+
+.image img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Card Info */
+.info {
+    padding: 5px 10px;
+    flex: 1;
+}
+
+.name {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.description {
+    font-size: 14px;
+}
+
+/* Card Attributes */
+.attributes {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.attribute-container,
+.level-rank-container,
+.property-container {
+    display: flex;
+    align-items: center;
+}
+
+.attribute-image,
+.level-rank-image,
+.property-image {
+    width: 20px;
+    height: auto;
+    margin-right: 5px;
+}
+
+.attribute-text,
+.level-rank-text,
+.property-text {
+    margin-right: 5px;
+}
+
+/* Card Level and Rank */
+.level-rank {
+    display: inline-block;
+    margin-right: 5px;
+    font-weight: bold;
+}
+
+/* Card Type */
+.type {
+    margin-right: 5px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+/* Card Stats */
+.stats {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.atk,
+.def {
+    margin-right: 10px;
+}

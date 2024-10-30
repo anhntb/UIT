@@ -1,0 +1,112 @@
+/* Card Container */
+.card {
+    width: 60%;
+    border: 3px solid #000;
+    border-radius: 5px;
+    overflow: hidden;
+    display: flex;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+/* Card Image */
+.card__image {
+    width: 10%;
+    float: left;
+}
+
+.card__image img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Card Info */
+.card__info {
+    padding: 5px 10px;
+    flex: 1;
+}
+
+.card__name {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.card__description {
+    font-size: 14px;
+}
+
+/* Card Attributes */
+.card__attributes {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.card__attribute--container,
+.card__level-rank--container,
+.card__property--container {
+    display: flex;
+    align-items: center;
+}
+
+.card__attribute--image,
+.card__level-rank--image,
+.card__property--image {
+    width: 20px;
+    height: auto;
+    margin-right: 5px;
+}
+
+.card__attribute--text,
+.card__level-rank--text,
+.card__property--text {
+    margin-right: 5px;
+}
+
+/* Card Level and Rank */
+.card__level-rank {
+    display: inline-block;
+    margin-right: 5px;
+    font-weight: bold;
+}
+
+/* Card Type */
+.card__type {
+    margin-right: 5px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+/* Card Stats */
+.card__stats {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.card__atk,
+.card__def {
+    margin-right: 10px;
+}
+
+.card--xyz {
+    border-color: black;
+}
+
+.card--effect {
+    border-color: #BC5F34;
+}
+
+.card--spell {
+    border-color: #00927C;
+}
+
+.card--trap {
+    border-color: #A91A74;
+}
