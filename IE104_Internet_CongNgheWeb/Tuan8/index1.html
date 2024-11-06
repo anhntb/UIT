@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+    
+
+    <!-- <script>
+        $(document).ready(function () {
+            confirm("Trang da tai xong");
+        });
+    </script> -->
+
+    <!-- <button class="mua">Mua</button><br>
+    <input class="mua" type="text"><br>
+    <button class="mua">Mua</button><br>
+    <input class="mua" type="text"><br>
+    <button class="mua">Mua</button><br>
+    <input class="mua" type="text"><br>
+    <button class="mua">Mua</button><br>
+    <input class="mua" type="text"><br>
+    <button class="mua">Mua</button><br>
+    <input class="mua" type="text"><br>
+
+    <script>
+        $(document).on("click", ".mua", function () {
+            confirm("Da mua");
+        });
+    </script> -->
+
+
+    <!-- <select id="chon">
+        <option>Cam</option>
+        <option>Xoai</option>
+        <option>Tao</option>
+    </select>
+    <input id="sl" type="text">
+    <button class="mua">Mua</button><br>
+
+    <p id="kq">Ket Qua</p>
+
+    <script>
+        $(document).on("click", ".mua", function () {
+            var soluong = $('#sl').val();
+            var Chon = $('#chon').val();
+            $("#kq").text("Ket Qua: " + Chon + " " + soluong + " trai");
+        });
+    </script> -->
+
+
+    <button id="an">An</button>
+    <button id="hien">Hien</button>
+    <button id="tog">Toggle</button><br>
+
+    <div class="idBox" style="background-color: aqua;
+                font-size: 20px;
+                font-weight: bold;
+                margin-top: 50px;
+                width: 300px;
+                height: 100px;
+                text-align: center;
+                padding-top: 50px;">
+        Lap Trinh Web that de
+    </div>
+
+    <script>
+        $(document).on("click", "#an", function() {
+            $('.idBox').hide();
+        });
+
+        $(document).on("click", "#hien", function() {
+            $('.idBox').show();
+        });
+
+        $(document).on("click", "#tog", function() {
+            $('.idBox').toggle();
+        });
+    </script>
+
+</body>
+</html>
