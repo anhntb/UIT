@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .box1{
+            border: 3px solid black;
+            padding: 20px;
+            width: fit-content;
+            margin-top: 50px;
+            background-color: antiquewhite;
+        }
+
+        .container{
+            display: grid;
+            grid-template-columns: repeat(3, auto);
+            justify-content: center;
+            border: 3px solid red;
+            row-gap: 30px;
+            margin: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box1">
+            o 1
+        </div>
+        <div class="box1">
+            o 1
+        </div>
+        <div class="box1">
+            o 1
+        </div>
+        <div class="box1">
+            o 1
+        </div>
+    </div>
+
+    <!-- <script>
+        for(i=0; i<10; i++){
+            document.write("<br>line " + i)
+        }
+
+    </script> -->
+</body>
+</html>
