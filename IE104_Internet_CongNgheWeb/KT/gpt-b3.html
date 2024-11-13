@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Góp Ý Đánh Giá Sản Phẩm</title>
+  
+  <style>
+    body {
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+}
+
+.review-container {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 600px;
+}
+
+h2 {
+  color: #7b68ee;
+  margin-bottom: 20px;
+}
+
+.review-form {
+  margin-top: 20px;
+}
+
+#name, #feedback {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #7b68ee;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #6a5acd;
+}
+
+.review {
+  border-top: 1px solid #eee;
+  padding: 10px 0;
+}
+
+.review .name {
+  font-weight: bold;
+  color: #555;
+}
+
+.review .time {
+  font-size: 12px;
+  color: #888;
+  margin-bottom: 5px;
+}
+
+.review .content {
+  color: #333;
+}
+
+  </style>
+</head>
+<body>
+  <div class="review-container">
+    <h2>ĐÁNH GIÁ</h2>
+    <div id="review-list">
+      <!-- Các đánh giá sẽ được thêm vào đây -->
+    </div>
+    <div class="review-form">
+      <input type="text" id="name" placeholder="Họ tên người dùng" required>
+      <textarea id="feedback" placeholder="Nội dung góp ý" required></textarea>
+      <button onclick="addReview()">Gửi đánh giá</button>
+    </div>
+  </div>
+
+  <script>
+    function addReview() {
+  const name = document.getElementById('name').value;
+  const feedback = document.getElementById('feedback').value;
+  const reviewList = document.getElementById('review-list');
+
+  if (name && feedback) {
+    const now = new Date();
+    const formattedTime = `${now.getHours()}:${now.getMinutes()} ${now.toDateString()}`;
+
+    const review = document.createElement('div');
+    review.classList.add('review');
+    review.innerHTML = `
+      <div class="name">@${name}</div>
+      <div class="time">${formattedTime}</div>
+      <div class="content">${feedback}</div>
+    `;
+
+    reviewList.appendChild(review);
+
+    // Xóa dữ liệu trong form sau khi gửi
+    document.getElementById('name').value = '';
+    document.getElementById('feedback').value = '';
+  } else {
+    alert("Vui lòng điền đầy đủ thông tin!");
+  }
+}
+
+  </script>
+</body>
+</html>

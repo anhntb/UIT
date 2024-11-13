@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Digital Clock</title>
+
+  <style>
+    body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #000; /* Nền đen */
+}
+
+.clock-container {
+  background-color: black;
+  padding: 20px 40px;
+  border-radius: 10px;
+}
+
+.clock {
+  color: #00bfff; /* Màu xanh dương */
+  font-size: 48px;
+  font-family: 'Courier New', Courier, monospace;
+  text-align: center;
+}
+
+  </style>
+</head>
+<body>
+  <div class="clock-container">
+    <div id="clock" class="clock"></div>
+  </div>
+  
+  <script>
+    function updateClock() {
+  const clockElement = document.getElementById('clock');
+  const now = new Date();
+  let hours = now.getHours();
+  const minutes = now.getMinutes();
+  const seconds = now.getSeconds();
+  const ampm = hours >= 12 ? 'PM' : 'AM';
+
+  hours = hours % 12 || 12; // Chuyển đổi sang định dạng 12 giờ
+  const formattedTime = [
+    hours.toString().padStart(2, '0'),
+    minutes.toString().padStart(2, '0'),
+    seconds.toString().padStart(2, '0'),
+  ].join(':') + ' ' + ampm;
+
+  clockElement.textContent = formattedTime;
+}
+
+// Cập nhật đồng hồ mỗi giây
+setInterval(updateClock, 1000);
+updateClock(); // Gọi ngay để hiển thị đồng hồ ngay khi tải trang
+
+  </script>
+</body>
+</html>
