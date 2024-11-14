@@ -10,9 +10,13 @@ dùng thư viện: beautifulsoup, bs4 để lấy dữ liệu
 các trang giá cổ phiếu
 dự đoán giá cổ phiếu
 
++Dự đoán hình ảnh: có code mẫu, làm từ 3 mô hình trở lên, demo lên web.
+
 
 lấy dữ liệu có sẵn: Kaggle, UCI
 
 
 Machine Learning cơ bản
 Vũ Hữu Tiệp (bìa xanh dương)
+
+Tăng số lượng dữ lieu: booststrap
