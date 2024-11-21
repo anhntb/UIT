@@ -19,4 +19,10 @@ lấy dữ liệu có sẵn: Kaggle, UCI
 Machine Learning cơ bản
 Vũ Hữu Tiệp (bìa xanh dương)
 
-Tăng số lượng dữ lieu: booststrap
+Tăng số lượng dữ lieu: booststrap, scalling
+
+
+
+python -m streamlit run .\lab06.py
+pip install seaborn
+............
