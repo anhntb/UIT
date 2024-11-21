@@ -34,3 +34,18 @@ if uploaded_file is not None:
         plt.xlabel(col)
         plt.ylabel('Quantity')
         st.pyplot(fig)
+
+    st.header('Show correlation between variables')
+    fig, ax = plt.subplots()
+    sns.heatmap(df.corr(method='pearson'), ax=ax, vmax=1, square=True, annot=True, cmap='Reds')
+    st.write(fig)
+
+    st.header('Show relationship between variables')
+    depend_var = st.radio('Choose dependent variable', df.columns)
+    for col in list(df.columns):
+        if col != depend_var:
+            fig, ax = plt.subplots()
+            ax.scatter(x=df[col], y=df[depend_var])
+            plt.xlabel(col)
+            plt.ylabel(depend_var)
+            st.pyplot(fig)
