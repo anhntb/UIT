@@ -1,33 +1,71 @@
-import React from 'react';
-import { StyleSheet, View, Text, ImageBackground } from 'react-native';
+// React Native Full Screen Background Image
+// https://aboutreact.com/react-native-full-screen-background-image/
 
-const FullScreenBackgroundImage = () => {
+// import React in our code
+import React from 'react';
+
+// import all the components we are going to use
+import {
+  SafeAreaView,
+  View,
+  Text,
+  ImageBackground,
+  StyleSheet,
+  Image,
+} from 'react-native';
+
+const imageBackground = () => {
   return (
-    <ImageBackground
-      source={{ uri: 'https://www.vietnamworks.com/hrinsider/wp-content/uploads/2023/12/hinh-nen-dien-thoai-19.jpg' }} 
-      // Đường dẫn đến hình ảnh của bạn
-      style={styles.backgroundImage}
-    >
-      <View style={styles.overlay}>
-        <Text style={styles.text}>Welcome!</Text>
-      </View>
-    </ImageBackground>
+    <SafeAreaView style={styles.container}>
+      <ImageBackground
+        style={{flex: 1}}
+        //We are using online image to set background
+        source={{
+          uri:
+            'https://raw.githubusercontent.com/AboutReact/sampleresource/master/crystal_background.jpg',
+        }}
+        //You can also set image from your project folder
+        //require('./images/background_image.jpg')
+      >
+        <View style={styles.container}>
+          <Text style={styles.titleStyle}>
+            React Native Full Screen Background Image
+          </Text>
+          <View style={styles.centerContentStyle}>
+            <Image
+              source={{
+                uri:
+                  'https://raw.githubusercontent.com/AboutReact/sampleresource/master/logosmalltransparen.png',
+              }}
+              style={{
+                width: 40,
+                height: 40,
+                marginTop: 90
+              }}
+            />
+            <Text style={styles.TextStyle}>
+              AboutReact
+            </Text>
+          </View>
+        </View>
+      </ImageBackground>
+    </SafeAreaView>
   );
 };
-
+export default imageBackground;
 const styles = StyleSheet.create({
-  backgroundImage: {
+  container: {
     flex: 1,
-    resizeMode: 'cover', // Đảm bảo hình ảnh được bao phủ toàn bộ màn hình
+    padding: 10,
+  },
+  titleStyle: {
+    fontSize: 28,
+    fontWeight: 'bold',
+    textAlign: 'center',
+    padding: 10,
+  },
+  centerContentStyle: {
     justifyContent: 'center',
     alignItems: 'center',
   },
-  text: {
-    color: '#fff',
-    fontSize: 24,
-    fontWeight: 'bold',
-    textAlign: 'center',
-  },
 });
-
-export default FullScreenBackgroundImage;
