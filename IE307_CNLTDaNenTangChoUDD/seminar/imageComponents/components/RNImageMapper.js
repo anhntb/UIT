@@ -88,7 +88,7 @@ const App = () => {
 };
 
 export default App;
-
+// Bản đồ tạo khu vực có thể click
 // Maps to Create Clickable Areas
 const RECTANGLE_MAP = [
   {

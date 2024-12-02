@@ -35,6 +35,7 @@ const SliderImageGallery = () => {
         <Gallery
           style={{flex: 1, backgroundColor: 'black'}}
           initialPage="1"
+          //hình ảnh hiển thị ban đầu
           //initial image to show
           images={items}
         />

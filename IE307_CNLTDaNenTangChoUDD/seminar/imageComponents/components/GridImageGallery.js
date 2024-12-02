@@ -36,6 +36,7 @@ const App = () => {
   }, []);
 
   const showModalFunction = (visible, imageURL) => {
+    //xử lý khi click vào ảnh, và click nút đóng
     //handler to handle the click on image of Grid
     //and close button on modal
     setImageuri(imageURL);
