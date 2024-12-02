@@ -28,6 +28,12 @@ const RNSectionList = () => {
     {id: '9', value: 'Brunei'},
     {id: '10', value: 'Bulgaria'},
   ];
+  let C = [
+    {id: '11', value: 'Cambodia'},
+    {id: '12', value: 'Cameroon'},
+    {id: '13', value: 'Canada'},
+    {id: '14', value: 'Cabo'},
+  ];
 
   const FlatListItemSeparator = () => {
     return (
@@ -44,6 +50,7 @@ const RNSectionList = () => {
           sections={[
             {title: 'Section Head For Data A', data: A},
             {title: 'Section Head For Data B', data: B},
+            {title: 'Section Head For Data C', data: C},
           ]}
           renderSectionHeader={({section}) => (
             <Text style={styles.sectionHeaderStyle}>
@@ -92,65 +99,3 @@ const styles = StyleSheet.create({
     backgroundColor: '#C8C8C8',
   },
 });
-
-
-import React, {useEffect, useState} from 'react';
-// Import required components
-import {
-  SafeAreaView,
-  LayoutAnimation,
-  StyleSheet,
-  View,
-  Text,
-  ScrollView,
-  UIManager,
-  TouchableOpacity,
-  Platform,
-} from 'react-native';
-
-const ExpandableComponent = ({item, onClickFunction}) => {
-  //Custom Component for the Expandable List
-  const [layoutHeight, setLayoutHeight] = useState(0);
-
-  useEffect(() => {
-    if (item.isExpanded) {
-      setLayoutHeight(null);
-    } else {
-      setLayoutHeight(0);
-    }
-  }, [item.isExpanded]);
-
-  return (
-    <View>
-      {/*Header of the Expandable List Item*/}
-      <TouchableOpacity
-        activeOpacity={0.8}
-        onPress={onClickFunction}
-        style={styles.header}>
-        <Text style={styles.headerText}>
-          {item.category_name}
-        </Text>
-      </TouchableOpacity>
-      <View
-        style={{
-          height: layoutHeight,
-          overflow: 'hidden',
-        }}>
-        {/*Content under the header of the Expandable List Item*/}
-        {item.subcategory.map((item, key) => (
-          <TouchableOpacity
-            key={key}
-            style={styles.content}
-            onPress={
-              () => alert('Id: ' + item.id + ' val: ' + item.val)
-          }>
-            <Text style={styles.text}>
-              {key}. {item.val}
-            </Text>
-            <View style={styles.separator} />
-          </TouchableOpacity>
-        ))}
-      </View>
-    </View>
-  );
-};

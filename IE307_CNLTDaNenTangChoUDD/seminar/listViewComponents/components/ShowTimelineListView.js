@@ -17,8 +17,19 @@ import {
 import BasicTimeLine from './TimelineListView/BasicTimeLine';
 import CustomTimeLine from './TimelineListView/CustomTimeLine';
 import DotTimeLine from './TimelineListView/DotTimeLine';
+import IconTimeLine from './TimelineListView/IconTimeLine';
+import
+  OverrideRenderTimeLine
+from './TimelineListView/OverrideRenderTimeLine';
+import
+  RefreshLoadMoreTimeLine
+from './TimelineListView/RefreshLoadMoreTimeLine';
+import SingleRightTimeLine from './TimelineListView/SingleRightTimeLine';
+import TemplateTimeLine from './TimelineListView/TemplateTimeLine';
+import TimeLinePress from './TimelineListView/TimeLinePress';
+import TwoColumnTimeLine from './TimelineListView/TwoColumnTimeLine';
 
-const ShowTimelineListView = () => {
+const App = () => {
   const [val, setVal] = useState(1);
 
   const renderElement = () => {
@@ -29,6 +40,20 @@ const ShowTimelineListView = () => {
       return <CustomTimeLine />;
     } else if (val === 3) {
       return <DotTimeLine />;
+    } else if (val === 4) {
+      return <IconTimeLine />;
+    } else if (val === 5) {
+      return <OverrideRenderTimeLine />;
+    } else if (val === 6) {
+      return <RefreshLoadMoreTimeLine />;
+    } else if (val === 7) {
+      return <SingleRightTimeLine />;
+    } else if (val === 8) {
+      return <TemplateTimeLine />;
+    } else if (val === 9) {
+      return <TimeLinePress />;
+    } else if (val === 10) {
+      return <TwoColumnTimeLine />;
     }
   };
 
@@ -36,6 +61,13 @@ const ShowTimelineListView = () => {
     'Basic TimeLine',
     'Custom TimeLine',
     'Dot TimeLine',
+    'Icon TimeLine',
+    'Override Render TimeLine',
+    'Refresh Load More TimeLine',
+    'Single Right TimeLine',
+    'Template TimeLine',
+    'TimeLine Press',
+    'Two Column TimeLine',
   ];
 
   return (
@@ -74,7 +106,7 @@ const ShowTimelineListView = () => {
     </SafeAreaView>
   );
 };
-export default ShowTimelineListView;
+export default App;
 
 const styles = StyleSheet.create({
   container: {
