@@ -57,7 +57,7 @@ public class BTVN_Cau6 {
         sortColumns(A);
 
         // Print array after sort
-        System.out.println("Mang sau khi sap xep cot:");
+        System.out.println("\nMang sau khi sap xep cot:");
         printMatrix(A);
     }
 
@@ -76,7 +76,7 @@ public class BTVN_Cau6 {
             }
         }
 
-        System.out.println("Phan tu lon nhat: " + max + " o vi tri [" + rowIndex + "][" + colIndex + "]\n");
+        System.out.println("\nPhan tu lon nhat: " + max + " o vi tri [" + rowIndex + "][" + colIndex + "]");
     }
 
     // Check prime number Function
@@ -90,7 +90,7 @@ public class BTVN_Cau6 {
 
     // "Replace non-prime numbers with 0" Function
     public static void replaceNonPrimes(int[][] A) {
-        System.out.println("Mang sau khi replace non-prime bang 0:");
+        System.out.println("\nMang sau khi replace non-prime bang 0:");
         for (int i = 0; i < A.length; i++) {
             for (int j = 0; j < A[i].length; j++) {
                 if (!isPrime(A[i][j])) {
@@ -116,7 +116,7 @@ public class BTVN_Cau6 {
         }
     }
 
-    // Hàm in mảng
+    // Print array
     public static void printMatrix(int[][] A) {
         for (int[] row : A) {
             for (int value : row) {
