@@ -1,3 +1,5 @@
+package BT;
+
 import java.util.Scanner;
 
 public class BTrenLop_Cau5 {
