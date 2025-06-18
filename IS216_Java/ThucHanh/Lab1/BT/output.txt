@@ -1,8 +1,0 @@
-Nhiet do Trung binh, Cao nhat, Thap nhat hang ngay: 
-Day 1: Average = 71.06, Max = 79.00, Min = 67.30
-Day 2: Average = 71.26, Max = 79.50, Min = 67.20
-Day 3: Average = 71.36, Max = 80.20, Min = 67.10
-
-Nhiet do trung binh trong tat ca cac ngay: 71.23
-Nhiet do cao nhat trong tat ca cac ngay: 80.20
-Nhiet do thap nhat trong tat ca cac ngay: 67.10
