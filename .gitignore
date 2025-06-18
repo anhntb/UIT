@@ -1,21 +1,8 @@
-/IS216_Java/ThucHanh/Lab1/FirstJavaApp/nbproject/private/
-/IS216_Java/ThucHanh/Lab1/FirstJavaApp/build/
-/IS216_Java/ThucHanh/Lab2/Lab2_BTTLp1_Cau1/nbproject/private/
-/IS216_Java/ThucHanh/Lab2/Lab2_NguyenTranBaoAnh/build/
-/IS216_Java/ThucHanh/Lab2/BTTLp1_Cau1/nbproject/private/
-/IS216_Java/ThucHanh/Lab2/BTTLp1_Cau1/build/
-/IS216_Java/ThucHanh/Lab2/HinhChuNhat/nbproject/private/
-/IS216_Java/ThucHanh/Lab2/BTTLp1_Cau2/nbproject/private/
-/IS216_Java/ThucHanh/Lab2/BTTLp1_Cau2/build/
-/IS216_Java/ThucHanh/Lab2/BTTLp2_Cau3/nbproject/private/
-/IS216_Java/ThucHanh/Lab2/BTTLp2_Cau4/nbproject/private/
-/IS216_Java/ThucHanh/Lab2/Lab3_Cau3/nbproject/private/
-/IS216_Java/ThucHanh/Lab2/Lab3_Cau3/build/
-/IS216_Java/ThucHanh/Lab4/Lab4_Cau3/Toolbar/nbproject/private/
-/IS216_Java/ThucHanh/Lab4/Lab4_Cau3/Toolbar/build/
-/IS216_Java/ThucHanh/Lab5/QLKB/nbproject/private/
-/IS216_Java/ThucHanh/Lab5/QLKB/build/
-
-.vscode
-/.idea
+# Ẩn các thư mục và tập tin không cần thiết trong dự án UIT
+/IS216_Java/ThucHanh/
 *.ipynb
+
+# Thư mục chứa các tập tin tạm thời và cấu hình IDE
+*.class
+.vscode
+.idea
