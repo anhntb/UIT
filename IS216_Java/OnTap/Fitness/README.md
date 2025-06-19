@@ -19,14 +19,17 @@ The `JAVA PROJECTS` view allows you to manage your dependencies. More details ca
 
 
 ## How to run
-1.Biên dịch code:
-    `javac -d ../bin *.java`
+### 1. Biên dịch code:
+    javac -d ../bin *.java
 (Chạy lệnh này trong thư mục `src`, nó sẽ tạo file `.class` trong `bin`.)
 
 
-2.Chạy chương trình:
-Di chuyển ra thư mục Fitness (nơi chứa cả `bin` và `lib`): `cd ..`
+### 2. Chạy chương trình:
+Di chuyển ra thư mục Fitness (nơi chứa cả `bin` và `lib`): 
+    
+    cd ..
 
-Chạy lệnh: 
-`java -cp "lib/*;bin" App`
+<br>Chạy lệnh: 
+
+    java -cp "lib/*;bin" App
 
