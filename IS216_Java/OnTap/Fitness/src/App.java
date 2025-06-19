@@ -16,9 +16,10 @@ public class App {
             System.out.println("Success!");
 
             // * Form thêm huấn luyện viên
-            SwingUtilities.invokeLater(() -> new FormThemHLV(conn).setVisible(true));
+            // SwingUtilities.invokeLater(() -> new FormThemHLV(conn).setVisible(true));
             
             // * Check-in tập luyện
+            // SwingUtilities.invokeLater(() -> new FormCheckin(conn).setVisible(true));
 
             // * Thêm đăng ký gói tập
 
