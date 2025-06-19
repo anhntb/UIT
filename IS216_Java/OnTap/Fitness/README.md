@@ -16,3 +16,17 @@ Meanwhile, the compiled output files will be generated in the `bin` folder by de
 ## Dependency Management
 
 The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+
+
+## How to run
+1.Biên dịch code:
+    `javac -d ../bin *.java`
+(Chạy lệnh này trong thư mục `src`, nó sẽ tạo file `.class` trong `bin`.)
+
+
+2.Chạy chương trình:
+Di chuyển ra thư mục Fitness (nơi chứa cả `bin` và `lib`): `cd ..`
+
+Chạy lệnh: 
+`java -cp "lib/*;bin" App`
+
