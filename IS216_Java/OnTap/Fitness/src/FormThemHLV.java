@@ -47,11 +47,11 @@ public class FormThemHLV extends JFrame {
     }
 
     private void themHLV() {
-        String ten = txtTen.getText().trim();
+        String ten = txtTen.getText();
         String gioiTinh = cbGioiTinh.getSelectedItem().toString();
-        String cccd = txtCCCD.getText().trim();
-        String sdt = txtSDT.getText().trim();
-        String bietDanh = txtBietDanh.getText().trim();
+        String cccd = txtCCCD.getText();
+        String sdt = txtSDT.getText();
+        String bietDanh = txtBietDanh.getText();
 
         // if (ten.isEmpty() || cccd.isEmpty() || sdt.isEmpty()) {
         //     JOptionPane.showMessageDialog(this, "Vui lòng nhập đầy đủ thông tin bắt buộc!");
