@@ -18,18 +18,22 @@ public class App {
         Scanner sc =  new Scanner(System.in);
 
         // * Bài 1
-        System.out.println("\n===Bai 1===");
-        System.out.print("Nhap ban kinh: ");
-        HinhTron ht = new HinhTron(sc.nextDouble());
-        System.out.println("Chu vi hinh tron: " + ht.tinhChuvi());
+        // System.out.println("\n===Bai 1===");
+        // System.out.print("Nhap ban kinh: ");
+        // HinhTron ht = new HinhTron(sc.nextDouble());
+        // System.out.println("Chu vi hinh tron: " + ht.tinhChuvi());
 
         // * Bài 2
-        System.out.println("\n===Bai 2===");
-        System.out.print("Nhap a: ");
-        double a = sc.nextDouble();
-        System.out.print("Nhap b: ");   
-        double b = sc.nextDouble();
-        System.out.printf("Thuong a/b: %.3f", tinhThuong(a, b));
+        // System.out.println("\n===Bai 2===");
+        // System.out.print("Nhap a: ");
+        // double a = sc.nextDouble();
+        // System.out.print("Nhap b: ");   
+        // double b = sc.nextDouble();
+        // System.out.printf("Thuong a/b: %.3f", tinhThuong(a, b));
+
+        // * Bài 3
+        PhanSo ps = new PhanSo(1,1);
+
         
         sc.close();
     }

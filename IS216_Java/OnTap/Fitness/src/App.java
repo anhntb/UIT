@@ -22,7 +22,7 @@ public class App {
             // SwingUtilities.invokeLater(() -> new FormCheckin(conn).setVisible(true));
 
             // * Thêm đăng ký gói tập
-
+            SwingUtilities.invokeLater(() -> new FormDK(conn).setVisible(true));
             
         } catch (SQLException e) {
             System.out.println("Fail!");
