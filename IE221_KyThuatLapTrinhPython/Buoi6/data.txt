@@ -1,0 +1,38 @@
+Oct 17 08:23:10 router-jnp01 mgd[1234]: UI_COMMIT: User 'admin' committed configuration changes
+Oct 17 08:23:12 router-jnp01 rpd[2356]: RPD_BGP_NEIGHBOR_STATE_CHANGED: peer 192.168.1.2 (Internal AS 65001) old state Established, new state Idle
+Oct 17 08:23:20 router-jnp01 chassisd[1123]: CHASSISD_IFD_DOWN: Interface ge-0/0/1, administrative status Down
+Oct 17 08:23:22 router-jnp01 chassisd[1123]: CHASSISD_IFD_UP: Interface ge-0/0/1, administrative status Up
+Oct 17 08:23:35 router-jnp01 alarmd[2201]: ALARM_MAJOR: Fan tray 0 failure detected
+Oct 17 08:23:40 router-jnp01 alarmd[2201]: ALARM_CLEARED: Fan tray 0 operational
+Oct 17 08:23:55 router-jnp01 rpd[2356]: RPD_OSPF_NEIGHBOR_DOWN: OSPF neighbor 10.0.0.2 (ge-0/0/2.0) Down due to inactivity
+Oct 17 08:24:00 router-jnp01 mgd[1234]: UI_LOGIN_EVENT: User 'netops' logged in from 10.10.10.5 via ssh
+Oct 17 08:25:02 router-cisco01 6065: %SYS-5-CONFIG_I: Configured from console by admin
+Oct 17 08:25:10 router-cisco01 1223: %LINK-3-UPDOWN: Interface GigabitEthernet0/1, changed state to up
+Oct 17 08:25:15 router-cisco01 1224: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet0/1, changed state to up
+Oct 17 08:25:35 router-cisco01 3141: %BGP-5-ADJCHANGE: neighbor 172.16.0.2 Down - BGP Notification sent
+Oct 17 08:25:40 router-cisco01 3142: %BGP-5-ADJCHANGE: neighbor 172.16.0.2 Up
+Oct 17 08:26:00 router-cisco01 4100: %SEC_LOGIN-5-LOGIN_SUCCESS: Login Success [user: netops] [Source: 10.10.20.12]
+Oct 17 08:26:10 router-cisco01 4101: %SEC_LOGIN-4-LOGIN_FAILED: Login failed [user: root] [Source: 192.168.100.10]
+Oct 17 08:26:30 router-cisco01 6065: %SYS-5-RELOAD: Reload requested by admin. Reload reason: System upgrade
+=== Cisco Router Log Diagnostic Report ===
+Date: Oct 17 08:30:00
+Analyzed Router: router-cisco01
+
+[1] ?? Security Alert:
+    - Multiple failed login attempts detected from 192.168.100.10
+    - Possible brute-force attack or unauthorized access attempt
+
+[2] ?? Network Stability:
+    - BGP neighbor 172.16.0.2 experienced transient disconnections
+    - Recommend checking peering stability and link quality
+
+[3] ?? System Event:
+    - Scheduled reload at 08:26:30 indicates planned upgrade
+    - Verify post-upgrade configuration integrity
+
+[4] ? Interface Status:
+    - GigabitEthernet0/1 link restored successfully at 08:25:10
+
+Summary:
+    Severity: Medium
+    Recommended Action: Monitor login attempts and confirm BGP stability

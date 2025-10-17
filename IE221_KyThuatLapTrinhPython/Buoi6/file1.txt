@@ -1,0 +1,8 @@
+Oct 17 08:23:10 router-jnp01 mgd[1234]: UI_COMMIT: User 'admin' committed configuration changes
+Oct 17 08:23:12 router-jnp01 rpd[2356]: RPD_BGP_NEIGHBOR_STATE_CHANGED: peer 192.168.1.2 (Internal AS 65001) old state Established, new state Idle
+Oct 17 08:23:20 router-jnp01 chassisd[1123]: CHASSISD_IFD_DOWN: Interface ge-0/0/1, administrative status Down
+Oct 17 08:23:22 router-jnp01 chassisd[1123]: CHASSISD_IFD_UP: Interface ge-0/0/1, administrative status Up
+Oct 17 08:23:35 router-jnp01 alarmd[2201]: ALARM_MAJOR: Fan tray 0 failure detected
+Oct 17 08:23:40 router-jnp01 alarmd[2201]: ALARM_CLEARED: Fan tray 0 operational
+Oct 17 08:23:55 router-jnp01 rpd[2356]: RPD_OSPF_NEIGHBOR_DOWN: OSPF neighbor 10.0.0.2 (ge-0/0/2.0) Down due to inactivity
+Oct 17 08:24:00 router-jnp01 mgd[1234]: UI_LOGIN_EVENT: User 'netops' logged in from 10.10.10.5 via ssh

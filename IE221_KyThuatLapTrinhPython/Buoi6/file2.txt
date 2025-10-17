@@ -1,0 +1,8 @@
+Oct 17 08:25:02 router-cisco01 6065: %SYS-5-CONFIG_I: Configured from console by admin
+Oct 17 08:25:10 router-cisco01 1223: %LINK-3-UPDOWN: Interface GigabitEthernet0/1, changed state to up
+Oct 17 08:25:15 router-cisco01 1224: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet0/1, changed state to up
+Oct 17 08:25:35 router-cisco01 3141: %BGP-5-ADJCHANGE: neighbor 172.16.0.2 Down - BGP Notification sent
+Oct 17 08:25:40 router-cisco01 3142: %BGP-5-ADJCHANGE: neighbor 172.16.0.2 Up
+Oct 17 08:26:00 router-cisco01 4100: %SEC_LOGIN-5-LOGIN_SUCCESS: Login Success [user: netops] [Source: 10.10.20.12]
+Oct 17 08:26:10 router-cisco01 4101: %SEC_LOGIN-4-LOGIN_FAILED: Login failed [user: root] [Source: 192.168.100.10]
+Oct 17 08:26:30 router-cisco01 6065: %SYS-5-RELOAD: Reload requested by admin. Reload reason: System upgrade

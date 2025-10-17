@@ -1,0 +1,7 @@
+This is a sample log file that can be used to record log messages or events for debugging or monitoring purposes. 
+
+[INFO] Log file created successfully.
+[DEBUG] Sample log entry for testing.
+[WARNING] This is a warning message.
+[ERROR] An error occurred while processing the request.
+[INFO] End of log file.

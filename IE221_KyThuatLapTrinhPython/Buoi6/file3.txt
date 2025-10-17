@@ -1,0 +1,22 @@
+=== Cisco Router Log Diagnostic Report ===
+Date: Oct 17 08:30:00
+Analyzed Router: router-cisco01
+
+[1] 🔍 Security Alert:
+    - Multiple failed login attempts detected from 192.168.100.10
+    - Possible brute-force attack or unauthorized access attempt
+
+[2] ⚠️ Network Stability:
+    - BGP neighbor 172.16.0.2 experienced transient disconnections
+    - Recommend checking peering stability and link quality
+
+[3] 🔧 System Event:
+    - Scheduled reload at 08:26:30 indicates planned upgrade
+    - Verify post-upgrade configuration integrity
+
+[4] ✅ Interface Status:
+    - GigabitEthernet0/1 link restored successfully at 08:25:10
+
+Summary:
+    Severity: Medium
+    Recommended Action: Monitor login attempts and confirm BGP stability
