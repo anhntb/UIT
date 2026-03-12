@@ -1,9 +1,22 @@
 # Ẩn các thư mục và tập tin không cần thiết trong dự án UIT
 /IS216_Java/ThucHanh/
 *.ipynb
+*.mp4
 
 # Thư mục chứa các tập tin tạm thời và cấu hình IDE
 *.class
 .vscode
 .idea
 *.pyc
+
+# Thư mục chứa các tập tin cấu hình và dữ liệu cá nhân
+*.pdf
+*.docx
+*.xlsx
+*.pptx
+*.csv
+*.pkl
+
+# File dữ liệu lớn trong DS102
+DS102_HocMayThongKe/HocMay/*.csv
+DS102_HocMayThongKe/HocMay/*.pkl
