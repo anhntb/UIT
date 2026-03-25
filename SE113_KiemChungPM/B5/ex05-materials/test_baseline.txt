@@ -1,0 +1,26 @@
+﻿TC01|||Normal: 4 students, scores 100,85,40,60|||n = 4|||scores = 100 85 40 60|||======== score info ========|||#students = 4|||#passed = 3 (75%)||||||ave = 71.3|||max = 100|||min = 40|||============================
+TC02|||Normal: with NA (-1)|||n = 4|||scores = -1 85 40 60|||======== score info ========|||#students = 4|||#passed = 2 (50%)||||||ave = 61.7|||max = 85|||min = 40|||============================
+TC03|||Boundary: n=1, score=60|||n = 1|||scores = 60|||======== score info ========|||#students = 1|||#passed = 1 (100%)||||||ave = 60.0|||max = 60|||min = 60|||============================
+TC04|||Boundary: score=59|||n = 1|||scores = 59|||======== score info ========|||#students = 1|||#passed = 0 (0%)||||||ave = 59.0|||max = 59|||min = 59|||============================
+TC05|||Boundary: n=9|||n = 9|||scores = -1 0 59 60 100 100 -1 80 21|||======== score info ========|||#students = 9|||#passed = 4 (44%)||||||ave = 60.0|||max = 100|||min = 0|||============================
+TC06|||Edge: all NA|||n = 3|||scores = -1 -1 -1|||======== score info ========|||#students = 3|||#passed = 0 (0%)||||||ave = 0.0|||max = 0|||min = 0|||============================
+TC07|||Edge: all 100|||n = 2|||scores = 100 100|||======== score info ========|||#students = 2|||#passed = 2 (100%)||||||ave = 100.0|||max = 100|||min = 100|||============================
+TC08|||Invalid: n=0|||n = 0|||ERROR: invalid number of students (0)
+TC09|||Invalid: n=10|||n = 10|||ERROR: invalid number of students (10)
+TC10|||Invalid: n=-3|||n = -3|||ERROR: invalid number of students (-3)
+TC11|||Invalid: score=-2|||n = 3|||scores = 50 -2|||ERROR: invalid score (-2)
+TC12|||Invalid: score=101|||n = 3|||scores = 50 101|||ERROR: invalid score (101)
+TC13|||Edge: multiple invalid|||n = 4|||scores = -1 101|||ERROR: invalid score (101)
+TC14|||Edge: first score invalid|||n = 3|||scores = 102|||ERROR: invalid score (102)
+TC15|||Edge: pass rate 33%|||n = 3|||scores = 60 59 0|||======== score info ========|||#students = 3|||#passed = 1 (33%)||||||ave = 39.7|||max = 60|||min = 0|||============================
+TC16|||Edge: NA don't affect min/max|||n = 5|||scores = -1 70 -1 80 90|||======== score info ========|||#students = 5|||#passed = 3 (60%)||||||ave = 80.0|||max = 90|||min = 70|||============================
+TC17|||Invalid type: n is alphabetic character|||
+TC18|||Invalid type: n is special character|||
+TC19|||Invalid type: n is floating-point value|||n = 4|||scores =
+TC20|||Invalid type: n is mixed alphanumeric|||n = 4|||scores =
+TC21|||Invalid type: first score is alphabetic|||n = 3|||scores =
+TC22|||Invalid type: middle score is alphabetic|||n = 3|||scores = 50
+TC23|||Invalid type: score is special character|||n = 2|||scores = 80
+TC24|||Edge type: score is floating-point with n=1|||n = 1|||scores = 12|||======== score info ========|||#students = 1|||#passed = 0 (0%)||||||ave = 12.0|||max = 12|||min = 12|||============================
+TC25|||Invalid type: score is floating-point in sequence|||n = 3|||scores = 50 60
+TC26|||Invalid type: score is mixed alphanumeric|||n = 2|||scores = 80
