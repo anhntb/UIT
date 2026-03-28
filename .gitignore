@@ -24,3 +24,8 @@ DS102_HocMayThongKe/HocMay/*.pkl
 
 # Agents
 .github/
+
+# File nén
+*.zip
+*.tar
+*.rar
