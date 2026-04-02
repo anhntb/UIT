@@ -1,0 +1,65 @@
+        -:    0:Source:cau1.c
+        -:    0:Graph:cau1.gcno
+        -:    0:Data:cau1.gcda
+        -:    0:Runs:1
+        -:    0:Programs:1
+function gcd called 3 returned 100% blocks executed 80%
+        3:    1:int gcd(int x, int y, int z){
+        -:    2:    int r, swap;
+        -:    3:
+        3:    4:    if (x < 1 || y < 1 || z < 1){
+branch  0 taken 100% (fallthrough)
+branch  1 taken 0%
+branch  2 taken 100% (fallthrough)
+branch  3 taken 0%
+branch  4 taken 0% (fallthrough)
+branch  5 taken 100%
+    #####:    5:        return -1;
+        -:    6:    }
+        -:    7:
+        3:    8:    if (x == 1 || y == 1 || z == 1){
+branch  0 taken 67% (fallthrough)
+branch  1 taken 33%
+branch  2 taken 100% (fallthrough)
+branch  3 taken 0%
+branch  4 taken 0% (fallthrough)
+branch  5 taken 100%
+        1:    9:        return 1;
+        -:   10:    }
+        -:   11:
+        2:   12:    if (x < y){
+branch  0 taken 0% (fallthrough)
+branch  1 taken 100%
+    #####:   13:        swap = x;
+    #####:   14:        x = y;
+    #####:   15:        y = swap;
+        -:   16:    }
+        -:   17:
+        2:   18:    r = x % y;
+        4:   19:    while (r != 0){
+branch  0 taken 0%
+branch  1 taken 100% (fallthrough)
+    #####:   20:        x = y;
+    #####:   21:        y = r;
+    #####:   22:        r = x % y;
+        -:   23:    }
+        -:   24:
+        2:   25:    if (y < z){
+branch  0 taken 50% (fallthrough)
+branch  1 taken 50%
+        1:   26:        swap = y;
+        1:   27:        y = z;
+        1:   28:        z = swap;
+        -:   29:    }
+        -:   30:
+        2:   31:    r = y % z;
+        4:   32:    while (r != 0){
+branch  0 taken 0%
+branch  1 taken 100% (fallthrough)
+    #####:   33:        y = z;
+    #####:   34:        z = r;
+    #####:   35:        r = y % z;
+        -:   36:    }
+        -:   37:
+        2:   38:    return z;
+        -:   39:}
