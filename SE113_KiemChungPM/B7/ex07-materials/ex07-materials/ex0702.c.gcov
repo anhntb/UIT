@@ -1,0 +1,60 @@
+        -:    0:Source:ex0702.c
+        -:    0:Graph:.\ex0702.gcno
+        -:    0:Data:.\ex0702.gcda
+        -:    0:Runs:17
+        -:    0:Programs:1
+        -:    1:#include <stdio.h>
+        -:    2:
+       17:    3:int main(void){
+        -:    4:  int side[3], i, j, tmp, max_p;
+        -:    5:
+       17:    6:  printf("Input three sides:\n> ");
+       17:    7:  if ( scanf("%d %d %d", &side[0], &side[1], &side[2]) != 3 ){
+        2:    8:    printf("[ERROR] invalid input\n");
+        2:    9:    return 1;
+        -:   10:  }
+        -:   11:
+       51:   12:  for ( i = 0; i < 3; i++ ){
+       39:   13:    if ( side[i] < 1 || side[i] >= 100 ){
+        3:   14:      printf("[ERROR] invalid input\n");
+        3:   15:      return 1;
+        -:   16:    }
+        -:   17:  }
+        -:   18:
+        -:   19:  /* sort three sides in descending order */
+       48:   20:  for ( i = 0; i < 3; i++ ){
+       36:   21:    max_p = i;
+       72:   22:    for ( j = i+1; j < 3; j++ ){
+       36:   23:      if ( side[max_p] < side[j] ){
+        9:   24:        max_p = j;
+        -:   25:      }
+        -:   26:    }
+       36:   27:    tmp = side[max_p];
+       36:   28:    side[max_p] = side[i];
+       36:   29:    side[i] = tmp;
+        -:   30:  }
+        -:   31:
+       12:   32:  printf("\n");
+       12:   33:  printf("three sides =");
+       48:   34:  for ( i = 0; i < 3; i++ ){
+       36:   35:    printf(" %d", side[i]);
+        -:   36:  }
+       12:   37:  printf("\n");
+        -:   38:
+        -:   39:
+       12:   40:  printf(" ===> ");
+       12:   41:  if ( side[0] >= side[1] + side[2] ){
+        2:   42:    printf("[ERROR] not a triangle\n");
+        -:   43:  }
+       10:   44:  else if ( side[0] == side[2] ){
+        3:   45:    printf("equilateral triangle\n");
+        -:   46:  }
+        7:   47:  else if ( side[0] == side[1] || side[1] == side[2] ){
+        3:   48:    printf("isosceles triangle\n");
+        -:   49:  }
+        -:   50:  else{
+        4:   51:    printf("scalene triangle\n");
+        -:   52:  }
+        -:   53:
+       12:   54:  return 0;
+        -:   55:}

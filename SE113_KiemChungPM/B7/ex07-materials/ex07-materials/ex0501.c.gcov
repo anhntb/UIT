@@ -1,0 +1,62 @@
+        -:    0:Source:ex0501.c
+        -:    0:Graph:.\ex0501.gcno
+        -:    0:Data:.\ex0501.gcda
+        -:    0:Runs:13
+        -:    0:Programs:1
+        -:    1:#include <stdio.h>
+        -:    2:
+       13:    3:int main(void){
+        -:    4:  int time, amount, sale, discount, bill, t;
+        -:    5:
+       13:    6:  printf("Input the parking time (min): ");
+       13:    7:  scanf("%d", &time);
+       13:    8:  if ( time < 0 ){
+        1:    9:    printf("[ERROR] invalid input\n");
+        1:   10:    return 1;
+        -:   11:  }
+        -:   12:
+       12:   13:  printf("Input the purchased amount at parter shops (yen): ");
+       12:   14:  scanf("%d", &sale);
+       12:   15:  if ( sale < 0 ){
+        1:   16:    printf("[ERROR] invalid input\n");
+        1:   17:    return 1;
+        -:   18:  }
+        -:   19:
+        -:   20:
+       11:   21:  amount = 100;
+       11:   22:  if ( time > 30 && time < 60 ){
+        2:   23:    amount = 200;
+        -:   24:  }
+        -:   25:  else{
+        9:   26:    t = time - 60;
+    70205:   27:    while ( t > 0 ){
+    70187:   28:      amount += 100;
+    70187:   29:      t -= 60;
+        -:   30:    }
+        -:   31:  }
+        -:   32:
+       11:   33:  discount = 0;
+       11:   34:  if ( sale > 2000 ){
+        3:   35:    discount = 200;
+        -:   36:  }
+        -:   37:
+       11:   38:  bill = amount - discount;
+       11:   39:  if ( bill < 0 ){
+        2:   40:    bill = 0;
+        -:   41:  }
+        -:   42:
+       11:   43:  printf("\n");
+       11:   44:  printf("======= parking fee =======\n\n");
+        -:   45:
+       11:   46:  printf(" (a) time: %d mins\n", time);
+       11:   47:  printf("       ==> %d yen\n\n", amount);
+        -:   48:
+       11:   49:  printf(" (b) purchase: %d yen\n", sale);
+       11:   50:  printf("       ==> discount %d yen\n\n", discount);
+        -:   51:
+       11:   52:  printf("---------------------------\n");
+       11:   53:  printf(" (*) total: %d yen\n", bill);
+       11:   54:  printf("===========================\n");
+        -:   55:
+       11:   56:  return 0;
+        -:   57:}
